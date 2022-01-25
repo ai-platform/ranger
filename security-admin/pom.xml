@@ -839,7 +839,7 @@
             </plugin>
 
             <!-- duplicate SQL patch file version validator plugin -->
-            <plugin>
+            <!-- <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
                 <version>1.4.1</version>
@@ -890,10 +890,10 @@
                             </rules>
                             <fail>true</fail>
                         </configuration>
-                    </execution>
+                    </execution> -->
 
                     <!-- duplicate JAVA patch file version validator plugin -->
-                    <execution>
+                    <!-- <execution>
                         <id>duplicate-java-patch-file-version-validator</id>
                         <goals>
                             <goal>enforce</goal>
@@ -935,7 +935,7 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin> -->
         </plugins>
         <resources>
             <resource>
