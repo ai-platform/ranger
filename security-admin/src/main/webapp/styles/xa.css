@@ -17,7 +17,8 @@
  */
 
 body {
-  background:#eee;
+  background:#FFFFFF;
+  padding: 43px 0 0 30px;
   font-family:'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
   font-size: 13px;
 }
@@ -64,28 +65,52 @@ body {
   border-radius: 3px;
 }
 #top-navbar .nav > li > a {
-  color: #fff;
+  color: #686868;
   display: block;
   line-height: 22px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
   text-decoration: none;
-  text-shadow: rgba(0, 0, 0, 0.2) 0px -1px 0;
-  height: auto;
   padding: 9px 15px;
+  padding-top: 24px;
+  padding-bottom: 18px;
 }
+.tab-bar{
+  width: 100%;
+  background: #FFFFFF;
+
+}
+.rcp-icon-btn{
+  background-color: white;
+  border: 1px solid #9C9C9C;
+  height: 35.7px;
+}
+path{
+  fill: #686868;
+}
+
+svg:hover > path{
+  fill: #A53159 !important;
+}
+
+
+
+
 #top-navbar .nav > li > a:hover {
   opacity: 0.7;
 }
 #top-navbar .nav > li.active > a,
 #top-navbar .nav > li.open > a,
 #top-navbar .nav > li.open > a:hover {
-  background: rgba(0, 0, 0, 0.15);
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px inset;
-  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px inset;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px inset;
-  opacity: 1;
+  color: #A53159;
+  
 }
+  li.active >a> span>svg>path,
+  li.open > a>span>svg>path,
+  li.open > a:hover>span>svg>path {
+  fill: #A53159 !important;
+}
+
 #top-navbar .dropdown-menu li a, #main-navbar .dropdown-menu a{
   font-size: 13px;
   padding: 4px 20px;
@@ -2874,7 +2899,7 @@ div#zoneServiceAccordion table thead {
   min-width: 300px;
   display: inline-block;
   height:auto;
-  background-color:#303d48;
+  /* background-color:white; */
   /*display: block;*/
 }
 
@@ -2934,7 +2959,7 @@ div#zoneServiceAccordion table thead {
 .list-data span,
 .list-data a,
 .list-data i.icon-expand-alt{
-  color:#fff;
+  color:#686868;
   font-size:16px;
 }
 
@@ -3101,6 +3126,7 @@ section#r_content{
 }
 
 body.service-layout {
+  padding-left: 0;
 }
 
 a.serviceNameEllipsis.active {
@@ -3395,6 +3421,15 @@ i#collapesService {
 .sidebar-list.expanded{
   width:22%;
 }
+@media (min-width: 1590px){
+  .sidebar-list.expanded{
+    width:350px !important;
+  }
+  .sidebar-list ~ section.container-fluid {
+    width: calc(100% - 350px) !important;
+}
+}
+
 .sidebar-list ~ .container {
     width: 76%;
 }
@@ -3836,7 +3871,7 @@ a.nav-link.dropdown-toggle.usermenu._allowNav ~ .dropdown-menu {
     overflow-y:visible;
     width: 22%;
     background-color:#303d48;
-    position: fixed;
+    /* position: fixed; */
     height: calc(100vh - 43px);
     -webkit-transition: 0.4s all;
     -moz-transition: 0.4s all;
