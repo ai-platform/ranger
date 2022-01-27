@@ -18,7 +18,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]> 	   <html class="ie"> <![endif]-->
+<!--[if gt IE 8]>      <html class="ie"> <![endif]-->
 <html class="no-js">
     <!--<![endif]-->
     <head>
@@ -49,28 +49,97 @@
         <link href="styles/xa.css" media="all" rel="stylesheet" type="text/css">
     </head>
 
-    <body class="container-fluid service-layout" id="contentBody">
+    <body style="padding-top: 0px" class="container-fluid service-layout" id="contentBody">
         <!-- Main navigation bar
         ================================================== -->
-        <header class="navbar fixed-top navbar-expand-lg ranger-nav" id="top-navbar">
-            <div class="navbar-inner">
-                <div class="container-fluid">
-                    <a class="navbar-brand logo" href="#"><img alt="Af_logo" src="images/ranger_logo.png"></a>
-                    <a class="btn nav-button collapsed" data-toggle="collapse" data-target=".navbar-collapse"> <span class="fa fw fa fa-reorder"></span> </a>
-                    <div id="r_topNav" style="margin-right: auto;"></div>
-                    <div id="r_topProfileBar"></div>
-                </div>
-            </div>
-        </header>
+       
         <!-- / Main navigation bar -->
         <!-- Page content
         ================================================== -->
+        <!--
+ * Licensed to the Apache Software Foundation (ASF) under one or more
+ * contributor license agreements.  See the NOTICE file distributed with
+ * this work for additional information regarding copyright ownership.
+ * The ASF licenses this file to You under the Apache License, Version 2.0
+ * (the "License"); you may not use this file except in compliance with
+ * the License.  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+-->
+<header class="clearfix atlas-header">
+    <div class="mainHeader">
+        <div class="header-sec1">
+            <div style="display: flex; flex: 0.1">
+                <div  style="display: flex ;flex:0.65">
+                    <div style="flex: 1 ;align-items: flex-start; justify-content: flex-start;">
+                        <img src="images/R_logo.png" height="64px" width="64px">
+                    </div>
+                </div>
+                <div class="headerIcons">
+                    <span data-id="sideCollapes"><i class="fa fa-bars fa-lg" style="color: gray;"></i></span>
+                </div>
+            </div>
+            <div class="headerLogo">
+                <div class="title" style="font-weight: bold; color: black; font-size: 16px;">Ranger</div>
+                <div class="" style="font-weight: bold;  font-size: 12px;">Dashboard</div>
+            </div>
+        </div>
+
+        <div class="has-feedback align-left-right-icon search-box header-sec2">
+            <div class="headerTextView">
+            <div style="align-items: center; justify-content: center; width:5%; position: relative; ">
+                <span class="fa fa-search form-control-feedback"></span>
+            </div>
+                <input type="text" class="form-control global-search" style="
+                background-color: #F7F7F7; 
+                width: 100%;     
+                font-family: Rakuten Sans UI" name="global search" placeholder="Search" data-id="globalSearch" />
+            </div>
+        </div>
+
+        <div class="header-sec3">
+            <div style=" display: flex;flex:0.5; align-items: center; justify-content: flex-end;">
+                <table class="header-menu" style="width: 50%; margin-top: 4px; margin-right: 10px;">
+                    <tr>
+                        <td class="dropdown">
+                            <a href="javascript:void(0);" style=" flex-direction: row-reverse; display: flex; color: gray;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="user-dropdown"><span>Admin</span><i style=" margin-right: 10px;" class="fa fa-lg fa-user user-circle "></i></a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="#!/userprofile"><i class="fa fa-user m-r-xs"></i> Profile </a>
+                                <a class="dropdown-item" href="javascript:;" class="_allowNav" data-id="logout"><i class="fa fa-power-off m-r-xs"></i> Log Out </a>
+                                    <a class="dropdown-item" href="javascript:;" data-id="oldNewSwitch" data-value="true">
+                                      <i class="fa fa-sign-out m-r-xs"></i> Switch to classic UI </a>
+                                    <a class="dropdown-item" href="javascript:;" data-id="oldNewSwitch" data-value="false">
+                                      <i class="fa fa-sign-out m-r-xs"></i> Switch to latest UI </a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>           
+            </div>        
+        </div>
+    </div>
+</header>
         <section id="r_sidebar"></section>
         <section class="container-fluid">
-            <div class="headerBreadcrumbs">
+            <section class="navbar  navbar-expand-lg ranger-nav" id="top-navbar">
+                <div class="tab-bar">
+                    <div class="container-fluid">
+                        <!-- <a class="navbar-brand logo" href="#"><img alt="Af_logo" src="images/ranger_logo.png"></a> -->
+                        <a class="btn nav-button collapsed" data-toggle="collapse" data-target=".navbar-collapse"> <span class="fa fw fa fa-reorder"></span> </a>
+                        <div id="r_topNav" style="margin-right: auto;"></div>
+                        <!-- <div id="r_topProfileBar"></div> -->
+                    </div>
+                </div>
+            </section>
+            <!-- <div class="headerBreadcrumbs">
                 <section id="r_breadcrumbs" class="r_breadcrumbs"></section>
                 <div class="latestResponse"></div>
-            </div>
+            </div> -->
             <div class="notifications top-right ranger-notifications"></div>
             <section id="r_content" style="min-height: 450px;">
                 <div class="loading-img">
