@@ -123,8 +123,14 @@ Version: 3.4.3 Timestamp: Tue Sep 17 06:47:14 PDT 2013
     opacity: 0;
     z-index: 9998;
     /* styles required for IE to work */
-    background-color: #fff;
+    /* background-color: #fff; */
     filter: alpha(opacity=0);
+    background: #FFFFFF;
+/* Input Field/Text box Border-Grey 600 */
+
+border: 1px solid #9C9C9C;
+box-sizing: border-box;
+border-radius: 4px;
 }
 
 .select2-drop {
