@@ -14,51 +14,122 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+
+
+
+
+
+
+
+
+/* rakuten-sansUI-web light */
+
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Rakuten Sans UI';
   font-style: normal;
   font-weight: 300;
-  src: local('Open Sans Light'), local('OpenSans-Light'), url(../fonts/fontopensans/open-sans-300.woff) format('woff');
+  src: local('Rakuten Sans UI Light'), local('RakutenSansUI-Light'),
+    url('../fonts/rakutenSans') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/rakutenSans/RakutenSansUI_W_Lt.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
+/* rakuten-sansUI-web light italic */
+
 @font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(../fonts/fontopensans/open-sans-400.woff) format('woff');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(../fonts/fontopensans/open-sans-600.woff) format('woff');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(../fonts/fontopensans/open-sans-700.woff) format('woff');
-}
-@font-face {
-  font-family: 'Open Sans';
+  font-family: 'Rakuten Sans UI';
   font-style: italic;
   font-weight: 300;
-  src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url(../fonts/fontopensans/open-sans-300i.woff) format('woff');
+  src: local('Rakuten Sans UI Light Italic'),
+    local('RakutenSansUI-Light-Italic'),
+    url('../fonts/rakutenSans/RakutenSansUI_W_LtIt.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/rakutenSans/RakutenSansUI_W_LtIt.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
+/* rakuten-sansUI-web Regular */
+
 @font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
+  font-family: 'Rakuten Sans UI';
+  font-style: normal;
   font-weight: 400;
-  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(../fonts/fontopensans/open-sans-400i.woff) format('woff');
+  src: local('Rakuten Sans UI Regular'), local('RakutenSansUI-Regular'),
+    url('../fonts/rakutenSans/RakutenSansUI_W_Rg.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/rakutenSans/RakutenSansUI_W_Rg.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
+/* rakuten-sansUI-web Regular italic */
+
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Rakuten Sans UI';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rakuten Sans UI Regular Italic'), local('RakutenSansUI-Regular-Italic'),
+  url('../fonts/rakutenSans/RakutenSansUI_W_RgIt.woff2')
+  format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('#{$noto-font-path}/RakutenSansUI_W_RgIt.woff')
+  format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* rakuten-sansUI-web Semi Bold */
+
+@font-face {
+  font-family: 'Rakuten Sans UI';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Rakuten Sans UI Semi Bold'), local('RakutenSansUI-Semi-Bold'),
+    url('../fonts/rakutenSans/RakutenSansUI_W_SBd.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/rakutenSans/RakutenSansUI_W_SBd.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* rakuten-sansUI-web Semi Bold italic */
+
+@font-face {
+  font-family: 'Rakuten Sans UI';
   font-style: italic;
   font-weight: 600;
-  src: local('Open Sans Semibold Italic'), local('OpenSans-SemiboldItalic'), url(../fonts/fontopensans/open-sans-600i.woff) format('woff');
+  src: local('Rakuten Sans UI Semi Bold Italic'),
+    local('RakutenSansUI-Semi-Bold-Italic'),
+    url('../fonts/rakutenSans/RakutenSansUI_W_SBdIt.woff2')
+      format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/rakutenSans/RakutenSansUI_W_SBdIt.woff')
+      format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
+/* rakuten-sansUI-web Bold */
+
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Rakuten Sans UI';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Rakuten Sans UI Bold'), local('RakutenSansUI-Bold'),
+    url('../fonts/rakutenSans/RakutenSansUI_W_Bd.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/rakutenSans/RakutenSansUI_W_Bd.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* rakuten-sansUI-web Bold italic */
+
+@font-face {
+  font-family: 'Rakuten Sans UI';
   font-style: italic;
   font-weight: 700;
-  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(../fonts/fontopensans/open-sans-700i.woff) format('woff');
+  src: local('Rakuten Sans UI Bold Italic'), local('RakutenSansUI-Bold-Italic'),
+    url('../fonts/rakutenSans/RakutenSansUI_W_BdIt.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/rakutenSans/RakutenSansUI_W_BdIt.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
