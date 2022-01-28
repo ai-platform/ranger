@@ -19,7 +19,7 @@
 body {
   background:#FFFFFF;
   padding: 43px 0 0 30px;
-  font-family:'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  font-family:'Rakuten Sans UI' !important;
   font-size: 13px;
 }
 
@@ -785,7 +785,7 @@ div#center {
 
 div#center span {
   position: relative;
-  font-family: Helvetica;
+  font-family: 'Rakuten Sans UI';
   font-size: 20px;
   font-weight: bolder;
   color: #0B7FAD;
@@ -1752,7 +1752,7 @@ td.html-cell.renderable:last-child {
 }
 .connection-error-font {
 	font-size: 11px;
-	font-family: monospace;
+	font-family: 'Rakuten Sans UI';
 }
 /**************/
 
@@ -1832,7 +1832,7 @@ margin-bottom: 5px;
 	margin-right: 31px;
 	margin-left: -140px;
 	width: 110px;
-	font-family: Tahoma;
+	font-family: 'Rakuten Sans UI';
 	font-size: 14px;
 	border-radius: 10px;
 	border: 2px #cccccc solid;
@@ -2579,18 +2579,21 @@ textarea:read-only{
   margin-top: 10px;
 }
 .security-details-default {
-  padding: 15px;
-  width: 70%;
+  background: white;
+  padding: 16px;
+  width: 100%;
   float: left;
-  min-height: 500px;
+  min-height: 80vh;
   border-left: 1px #CCC solid;
 }
 .default-zone {
-  position: absolute;
-  top: 50%;
-  left: 60%;
-  transform: translate(-50%,-50%);
+  position: relative;
+  /* top: 50%; */
+  /* left: 60%; */
+  /* transform: translate(-50%,-50%); */
   text-align: center;
+  margin-top: 10%;
+  color: #A53159;
 }
 .zoneImg {
   width: 128px;
@@ -2620,13 +2623,13 @@ textarea:read-only{
   vertical-align: middle;
 }
 .service-resource-new {
-  font-family: monospace;
+  font-family: 'Rakuten Sans UI';
 }
 .service-resource-new span {
   color: #269e08;
 }
 .service-resource-old {
-  font-family: monospace;
+  font-family: 'Rakuten Sans UI';
 }
 .service-resource-old span {
   color: #c5811b;
@@ -3150,6 +3153,11 @@ width: calc(100% - 330px);
 section#r_content{
   min-height:80vh !important;
 }
+.content-block{
+  background-color: #E5E5E5;
+  padding: 16px;
+
+}
 
 .sidebar-list ~ .container {
   min-height:auto;
@@ -3520,7 +3528,7 @@ i#collapesService {
 }
 
 .sidebar-list.collapsed ~ .container {
-    width: calc(100% - 35px);
+    width: calc(100% - 35px) !important;
 }
 
 .page-manager-sidebar input {
@@ -3886,11 +3894,11 @@ span.form-control > input {
     display: inline-block;
     width: 78%;
     float: right;
-    padding-left: 20px;
+    padding-left: 0;
     transition: 0.4s all;
 }
 .sidebar-list.collapsed ~ section.container-fluid {
-    width: calc(100% - 35px);
+    width: calc(100% - 35px)!important;
     padding-left: 0;
 }
 
@@ -3916,7 +3924,7 @@ a.nav-link.dropdown-toggle.usermenu._allowNav ~ .dropdown-menu {
     overflow-y:visible;
     width: 22%;
     background-color:#303d48;
-    /* position: fixed; */
+    position: fixed;
     height: calc(100vh - 43px);
     -webkit-transition: 0.4s all;
     -moz-transition: 0.4s all;
