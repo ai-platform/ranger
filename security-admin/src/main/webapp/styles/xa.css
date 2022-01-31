@@ -17,8 +17,9 @@
  */
 
 body {
-  background:#eee;
-  font-family:'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  background:#FFFFFF;
+  padding: 43px 0 0 30px;
+  font-family:'Rakuten Sans UI' !important;
   font-size: 13px;
 }
 
@@ -64,28 +65,52 @@ body {
   border-radius: 3px;
 }
 #top-navbar .nav > li > a {
-  color: #fff;
+  color: #686868;
   display: block;
   line-height: 22px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
   text-decoration: none;
-  text-shadow: rgba(0, 0, 0, 0.2) 0px -1px 0;
-  height: auto;
   padding: 9px 15px;
+  padding-top: 24px;
+  padding-bottom: 18px;
 }
+.tab-bar{
+  width: 100%;
+  background: #FFFFFF;
+
+}
+.rcp-icon-btn{
+  background-color: white;
+  border: 1px solid #9C9C9C;
+  height: 35.7px;
+}
+path{
+  fill: #686868;
+}
+
+svg:hover > path{
+  fill: #A53159 !important;
+}
+
+
+
+
 #top-navbar .nav > li > a:hover {
   opacity: 0.7;
 }
 #top-navbar .nav > li.active > a,
 #top-navbar .nav > li.open > a,
 #top-navbar .nav > li.open > a:hover {
-  background: rgba(0, 0, 0, 0.15);
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px inset;
-  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px inset;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px inset;
-  opacity: 1;
+  color: #A53159;
+  
 }
+  li.active >a> span>svg>path,
+  li.open > a>span>svg>path,
+  li.open > a:hover>span>svg>path {
+  fill: #A53159 !important;
+}
+
 #top-navbar .dropdown-menu li a, #main-navbar .dropdown-menu a{
   font-size: 13px;
   padding: 4px 20px;
@@ -93,7 +118,7 @@ body {
 
 #top-navbar .dropdown-menu li a:hover, #main-navbar .dropdown-menu a:hover{
   color: #ffffff !important;
-  background-color: #0B7FAD;
+  background-color: #C53E6C;
 }
 
 #main-footer {
@@ -760,7 +785,7 @@ div#center {
 
 div#center span {
   position: relative;
-  font-family: Helvetica;
+  font-family: 'Rakuten Sans UI';
   font-size: 20px;
   font-weight: bolder;
   color: #0B7FAD;
@@ -1583,7 +1608,7 @@ table.table.backgrid thead th.resourceType {
 }
 /* overridding select2 option hover css */
 .select2-results .select2-highlighted {
-  background: #0B7FAD;
+  background: #C53E6C;
 }
 .stretchTextInput{
   width:40%;
@@ -1727,7 +1752,7 @@ td.html-cell.renderable:last-child {
 }
 .connection-error-font {
 	font-size: 11px;
-	font-family: monospace;
+	font-family: 'Rakuten Sans UI';
 }
 /**************/
 
@@ -1807,7 +1832,7 @@ margin-bottom: 5px;
 	margin-right: 31px;
 	margin-left: -140px;
 	width: 110px;
-	font-family: Tahoma;
+	font-family: 'Rakuten Sans UI';
 	font-size: 14px;
 	border-radius: 10px;
 	border: 2px #cccccc solid;
@@ -2554,18 +2579,21 @@ textarea:read-only{
   margin-top: 10px;
 }
 .security-details-default {
-  padding: 15px;
-  width: 70%;
+  background: white;
+  padding: 16px;
+  width: 100%;
   float: left;
-  min-height: 500px;
+  min-height: 80vh;
   border-left: 1px #CCC solid;
 }
 .default-zone {
-  position: absolute;
-  top: 50%;
-  left: 60%;
-  transform: translate(-50%,-50%);
+  position: relative;
+  /* top: 50%; */
+  /* left: 60%; */
+  /* transform: translate(-50%,-50%); */
   text-align: center;
+  margin-top: 10%;
+  color: #A53159;
 }
 .zoneImg {
   width: 128px;
@@ -2595,13 +2623,13 @@ textarea:read-only{
   vertical-align: middle;
 }
 .service-resource-new {
-  font-family: monospace;
+  font-family: 'Rakuten Sans UI';
 }
 .service-resource-new span {
   color: #269e08;
 }
 .service-resource-old {
-  font-family: monospace;
+  font-family: 'Rakuten Sans UI';
 }
 .service-resource-old span {
   color: #c5811b;
@@ -2874,15 +2902,26 @@ div#zoneServiceAccordion table thead {
   min-width: 300px;
   display: inline-block;
   height:auto;
-  background-color:#303d48;
+  /* background-color:white; */
   /*display: block;*/
 }
 
 .page-manager-sidebar h4 {
   margin: 0;
-  color: #979797;
+  
   text-transform: uppercase;
   font-size: 16px;
+  font-family: Rakuten Sans UI;
+font-style: normal;
+font-weight: 600;
+
+line-height: 21px;
+/* identical to box height, or 131% */
+
+
+/* Forms/Focus */
+
+color: #333333;
 }
 
 .sidebar-list.collapsed .list-container > div {
@@ -2900,7 +2939,8 @@ div#zoneServiceAccordion table thead {
 }
 
 .components-header {
-  color : #c4c4d4;
+  color : #686868;
+  border-radius: 4px
 }
 
 .listData{
@@ -2909,6 +2949,7 @@ div#zoneServiceAccordion table thead {
 
 .list-container {
     padding: 15px;
+    background-color: #FFFFFF;
 }
 
 .list-header,
@@ -2930,13 +2971,79 @@ div#zoneServiceAccordion table thead {
     display: block;
     padding: 0;
 }
+.list-data a:hover {
+  color: #90003B;
+  transition: all 0.5s;
+}
+.list-data a{
+  cursor:pointer;
+  
+  color: #A53159;
+  /* background-color: #FFFFFF; */
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  
+}
+
+.plus-icon{
+color: #FFFFFF !important;
+background-color: #FFFFFF !important;
+}
+.components-header:hover .plus-icon{
+  color: #A53159 !important;
+background-color: #FFFFFF !important;
+}
+
+/* .plus-icon:hover{
+    color: #A53159 !important;
+  background-color: #FFFFFF !important;
+} */
+
+/* .list-data a:hover{
+background-color: #FFFFFF !important;
+visibility: visible;
+color: #A53159;
+cursor:pointer;
+border-radius: 4px;
+}
+.list-data span:hover{
+  background-color: #FFFFFF !important;
+visibility: visible;
+color: #A53159;
+} */
 
 .list-data span,
 .list-data a,
 .list-data i.icon-expand-alt{
-  color:#fff;
+  /* color:#686868 !important; */
   font-size:16px;
 }
+.components-header:hover > .list-data a {
+    background-color: #FFFFFF !important;
+color: #A53159;
+}
+
+.components-header:hover,.list-data{
+  color: #FFFFFF;
+}
+.components-header:hover,i.icon-expand-alt{
+  color: #FFFFFF;
+
+
+}
+.components-header:hover > .list-data span{
+  color: #FFFFFF;
+
+} 
+.components-header:hover{
+  background-color: #A53159;
+}
+.components-header:hover .component-list-item .fa-large {
+  color: #FFFFFF;
+}
+
+
+
 
 /*use below if you cant remove width from select2 */
 .list-filter{
@@ -3093,6 +3200,11 @@ width: calc(100% - 330px);
 section#r_content{
   min-height:80vh !important;
 }
+.content-block{
+  background-color: #E5E5E5;
+  padding: 16px;
+
+}
 
 .sidebar-list ~ .container {
   min-height:auto;
@@ -3101,6 +3213,7 @@ section#r_content{
 }
 
 body.service-layout {
+  padding-left: 0;
 }
 
 a.serviceNameEllipsis.active {
@@ -3154,6 +3267,11 @@ ul.zone-listing-new > li {
   padding-left: 14px;
   border: none;
 }
+ul.zone-listing-new > li:hover {
+  color: #FFFFFF !important;
+  background-color: #A53159;
+}
+
 
 .zone-listing-new {
     list-style: none;
@@ -3170,20 +3288,36 @@ ul.zone-listing-new > li {
 }
 */
 .zone-listing-new li.selected{
-  background-color: #203142;
+  background-color: #FFFFFF;
   border-radius: 4px;
+  color: #C53E6C;
 }
 ul.zone-listing-new > li > a {
-  color: rgba(255, 255, 255, 0.7);
+
   display: block;
+  font-family: Rakuten Sans UI;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Gray/600 */
+
+color: #686868 !important;
+}
+li.selected:hover {
+  color: #FFFFFF;
+  background-color: #A53159;
 }
 
 ul.zone-listing-new > li > a:hover {
-  color: #f1f2f3;
+  color: #FFFFFF !important;
+  background-color: #A53159;
 }
 
 li.selected a{
-  color: #ffffff !important;
+  color: #C53E6C !important;
 }
 
 .sidebar-list ~ .container {
@@ -3203,7 +3337,8 @@ li.selected a{
 .toggle-control {
     display: block;
     position: relative;
-    width: 25px;
+    width: 36px;
+    height: 20px;
     top: 10px;
     right: 6px;
     margin-bottom: 12px;
@@ -3213,7 +3348,7 @@ li.selected a{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    padding: 0 2px;
+    padding: 0 47px;
 }
 .toggle-control input {
     position: absolute;
@@ -3221,37 +3356,48 @@ li.selected a{
     cursor: pointer;
     height: 0;
     width: 0;
+    background-color: #FFFFFF;
+
 }
 .toggle-control input:checked ~ .control {
-    background-color: dodgerblue;
+    background-color: #90003B !important;
 }
 .toggle-control .control {
     position: absolute;
     top: 0;
     left: 0;
-    height: 12px;
-    width: 20px;
-    border-radius: 25px;
+    height: 20px;
+    width: 36px;
+    border-radius: 4px;
     background-color: darkgray;
+    box-shadow: 1px 1px 5px rgba(black, 0.2);
     -webkit-transition: background-color 0.15s ease-in;
     transition: background-color 0.15s ease-in;
 }
 .toggle-control .control:after {
     content: "";
     position: absolute;
-    left: 1px;
-    top: 1px;
-    height: 10px;
-    width: 10px;
-    border-radius: 25px;
-    background: white;
+    left: 2px;
+    top: 2px;
+    height: 16px;
+    width: 16px;
+    border-radius: 4px;
+    background: #90003B;
     -webkit-transition: left 0.15s ease-in;
     transition: left 0.15s ease-in;
 }
+::after {
+  background: #FFFFFF !important;
+}
+
 /*CSS based switch*/
 
 .toggle-control input:checked ~ .control:after {
-    left: 9px;
+    left: 17px;
+    border: 4px solid white;
+    background-color: #90003B !important;
+
+
 }
 
 .list-header{
@@ -3377,10 +3523,7 @@ i#collapesService {
     background-color: #0B7FAD;
 }
 
-.list-data a:hover {
-    color: #888888;
-    transition: all 0.5s;
-}
+
 
 .list-header > h4 ~ a{
   color:#888;
@@ -3395,6 +3538,15 @@ i#collapesService {
 .sidebar-list.expanded{
   width:22%;
 }
+@media (min-width: 1590px){
+  .sidebar-list.expanded{
+    width:350px !important;
+  }
+  .sidebar-list ~ section.container-fluid {
+    width: calc(100% - 350px) !important;
+}
+}
+
 .sidebar-list ~ .container {
     width: 76%;
 }
@@ -3412,7 +3564,12 @@ i#collapesService {
 
 .report-label {
   margin: 0;
-  color: #979797;
+  color: #686868;
+  font-family: Rakuten Sans UI;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
 }
 
 .sidebar-toggler > span {
@@ -3441,13 +3598,17 @@ i#collapesService {
 }
 
 .sidebar-list.collapsed ~ .container {
-    width: calc(100% - 35px);
+    width: calc(100% - 35px) !important;
 }
 
 .page-manager-sidebar input {
     width: 100%;
     margin:0;
     padding: 6px;
+    border-radius: 4px;
+}
+.page-manager-sidebar input:focus{
+  border: 1px solid #C53E6C;
 }
 
 .sidebar-list .control-group .btn-group{
@@ -3490,9 +3651,7 @@ i#collapesService {
     margin-top: 20px;
 }
 
-.list-data a{
-    cursor:pointer;
-}
+
 
 .service-list-container > div {
     clear: both;
@@ -3553,18 +3712,18 @@ a:focus,a:hover,a.active,a:active{
 .btn-default.active,
 .btn-default.disabled,
 .btn-default:hover{
-  color: #0B7FAD!important;
-  border-color: #0B7FAD!important;
-  background-color: #fff!important;
+  color: #C53E6C!important;
+  border-color: #C53E6C!important;
+  background-color: #FFFFFF!important;
   outline: none!important;
 }
 
 
 .btn-primary{
-  background-color: #0B7FAD;
+  background-color: #C53E6C;
   background-image: none;
-  color: #fff;
-  border-color: #0B7FAD;
+  color: #FFFFFF;
+  border-color: #C53E6C;
 }
 
 .btn-primary:focus,
@@ -3573,9 +3732,9 @@ a:focus,a:hover,a.active,a:active{
 .btn-primary.disabled,
 .btn-primary[disabled],
 .btn-primary:hover{
-  background-color:#2996ba;
+  background-color:#C53E6C;
   background-image: none;
-  color: #fff;
+  color: #FFFFFF;
 }
 
 .btn-danger{
@@ -3806,11 +3965,11 @@ span.form-control > input {
     display: inline-block;
     width: 78%;
     float: right;
-    padding-left: 20px;
+    padding-left: 0;
     transition: 0.4s all;
 }
 .sidebar-list.collapsed ~ section.container-fluid {
-    width: calc(100% - 35px);
+    width: calc(100% - 35px)!important;
     padding-left: 0;
 }
 
@@ -3853,12 +4012,24 @@ a.nav-link.dropdown-toggle.usermenu._allowNav ~ .dropdown-menu {
 
 .list-header > h5 {
     display: inline-block;
-    font-weight: 400;
-    line-height: 2.2;
+    /* font-weight: 400; */
+    /* line-height: 2.2; */
+    font-family: Rakuten Sans UI;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 21px;
+/* identical to box height, or 131% */
+
+
+/* Forms/Focus */
+
+color: #333333;
 }
 
 .list-header > h5 {
     float: none;
+    padding-top: 10px;
 }
 
 .no-chevron{
@@ -4695,6 +4866,16 @@ input.textFiledInputPadding:disabled {
   width: 100%;
   display: inline-block;
 }
+h6{
+  font-family: Rakuten Sans UI;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 20px;
+color: #686868;
+
+}
+
 
 .atlas-header {
   background-color: white;
