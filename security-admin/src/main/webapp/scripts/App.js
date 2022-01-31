@@ -39,7 +39,8 @@ define(function(require) {
         rBreadcrumbs	: '#r_breadcrumbs',
         rContent		: "#r_content",
         rFooter			: "#r_footer",
-        rSideBar        : "#r_sidebar"
+        rSideBar        : "#r_sidebar",
+        rHeader         : "#r_header"
 	});
 
 	/* Add initializers here */
