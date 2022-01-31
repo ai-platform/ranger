@@ -60,7 +60,7 @@
                         {{#each serviceDefs}}
                             <div class="listData">
                                 <div class="component-list-item m-b-md components-header">
-                                    <div class="" data-id="panel">
+                                    <div class="tag-header" data-id="panel">
                                         {{{handleCollapeServiceIcon ../services this}}}
                                         {{{handleServiceDefIcon ./this.attributes.name}}}
                                         <span class="capitalizes">{{./this.attributes.displayName}}</span>
@@ -76,7 +76,7 @@
                                             {{/if}}
                                         {{/if}}
                                     </div>
-                                    <div class="service-list-container listData components-header panel-content serviceActive">
+                                    <div class="service-list-container listData components-header panel-content serviceActive tag-list">
                                         {{{getServices ../services this}}}
                                     </div>
                                 </div>

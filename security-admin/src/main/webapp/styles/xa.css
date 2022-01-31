@@ -187,6 +187,7 @@ svg:hover > path{
   -moz-border-radius: 3px;
   border-radius: 3px;
   *zoom: 1;
+  margin-top: 43px;
 }
 .wrap:before,
 .wrap:after {
@@ -2949,6 +2950,7 @@ color: #333333;
 
 .list-container {
     padding: 15px;
+    margin-top: 45px;
     background-color: #FFFFFF;
 }
 
@@ -3203,6 +3205,7 @@ section#r_content{
 .content-block{
   background-color: #E5E5E5;
   padding: 16px;
+  /* margin-top: 80px; */
 
 }
 
@@ -3967,6 +3970,7 @@ span.form-control > input {
     float: right;
     padding-left: 0;
     transition: 0.4s all;
+    margin-top: 58px;
 }
 .sidebar-list.collapsed ~ section.container-fluid {
     width: calc(100% - 35px)!important;
@@ -4880,6 +4884,12 @@ color: #686868;
 .atlas-header {
   background-color: white;
   border-bottom: 1px #e8e9ee solid;
+  position: fixed;
+  height: 65px;
+  overflow: hidden;
+  top: 0;
+  z-index: 1;
+  width: 100%;
 }
 
 .mainHeader {
@@ -4968,4 +4978,48 @@ color: #686868;
 
 .align-left-right-icon {
   position: relative;
+}
+/* .tag-list{
+  color: #686868 !important;
+  background-color: #FFFFFF !important;
+}
+.tag-list:focus{
+  color: #C53E6C !important;
+}
+.tag-list:active{
+  color: #C53E6C !important;
+}
+
+.tag-header{
+  color: #686868 !important;
+  background-color: #FFFFFF !important;
+  border-radius: 4px;
+}
+.tag-header:hover{
+color: #FFFFFF;
+background-color: #A53159;
+}
+.tag-header:active{
+  color: #C53E6C !important;
+}
+.tag-header:focus{
+  color: #C53E6C !important;
+} */
+
+.dropdown-front{
+  overflow: hidden;
+  z-index: 10 !important
+}
+
+.dropdown-menu.show{
+  position: fixed !important;
+  margin-left: 2500px !important;
+  margin-top: 24px !important;
+}
+
+.nav-fixed{
+  position: fixed;
+    height: 89px;
+    width: 77%;
+    z-index: 9 !important;
 }
