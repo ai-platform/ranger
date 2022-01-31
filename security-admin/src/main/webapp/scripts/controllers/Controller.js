@@ -43,6 +43,7 @@ define(function(require) {
             var vTopNav = require('views/common/TopNav');
             var vProfileBar = require('views/common/ProfileBar');
             var vFooter = require('views/common/Footer');
+            var vHeader = require('views/common/Header')
 
             App.rTopNav.show(new vTopNav({
                 model: App.userProfile,
@@ -52,6 +53,9 @@ define(function(require) {
             App.rTopProfileBar.show(new vProfileBar({}));
 
             App.rFooter.show(new vFooter({}));
+
+            App.rHeader.show(new vHeader({}));
+
             //remove rSideBar from old UI
             if (App.rSideBar && App.rSideBar.$el) {
                 App.rSideBar.$el.removeClass("sidebar-list")
