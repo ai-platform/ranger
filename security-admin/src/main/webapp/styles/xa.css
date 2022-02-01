@@ -5045,10 +5045,13 @@ background-color: #A53159;
   color: #C53E6C !important;
 } */
 
-.dropdown-front{
+/* .dropdown-front{
   overflow: hidden;
-  z-index: 10 !important
-}
+  z-index: 10 !important;
+  position: fixed !important;
+  margin-left: 2500px !important;
+  margin-top: 24px !important;
+} */
 
 /* .dropdown-menu.show{
   position: fixed !important;
@@ -5058,11 +5061,7 @@ background-color: #A53159;
 .dropdown-menu-changes{
   position: fixed !important;
 }
-.dropdown-menu.show{
-  /* position: fixed !important;
-  margin-left: 2500px !important;
-  margin-top: 24px !important; */
-}
+
 
 .nav-fixed{
   position: fixed;
