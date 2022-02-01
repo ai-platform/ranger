@@ -295,23 +295,17 @@ define(function(require) {
                                     if (!_.isEmpty(model.get('validitySchedules')) && XAUtil.isPolicyExpierd(model)) {
                                         return '<div class="expiredIconPosition">\
                                                 <i class="fa-fw fa fa-exclamation-circle backgrigModelId" title="Policy expired"></i>\
-                                                ' + model.id + '\
-                                             </div>';
+                                                ' + model.id + '</div>';
                                     } else {
-                                        return '<div class="expiredIconPosition">\
-                                                ' + model.id + '\
-                                            </div>';
+                                        return '<div class="expiredIconPosition">' + model.id + '</div>';
                                     }
                                 } else {
                                     if (!_.isEmpty(model.get('validitySchedules')) && XAUtil.isPolicyExpierd(model)) {
                                         return '<div class="expiredIconPosition">\
-                                                <i class="fa-fw fa fa-exclamation-circle backgrigModelId" title="Policy expired"></i>\
-                                                <a class="" href="#!/service/' + that.rangerService.id + '/policies/' + model.id + '/edit">' + model.id + '</a>\
-                                             </div>';
+                                                <i class="fa-fw fa fa-exclamation-circle backgrigModelId" title="Policy expired"></i>' + model.id +'</div>';
                                     } else {
-                                        return '<div class="expiredIconPosition">\
-                                                <a class="" href="#!/service/' + that.rangerService.id + '/policies/' + model.id + '/edit">' + model.id + '</a>\
-                                            </div>';
+                                        return '<div class="expiredIconPosition">'
+                                                 + model.id + '</div>';
                                     }
                                 }
                             }
@@ -423,9 +417,14 @@ define(function(require) {
                             if (XAUtil.isAuditorOrKMSAuditor(SessionMgr)) {
                                 return '<a href="javascript:void(0);" data-name ="viewPolicy" data-id="' + model.id + '" class="btn btn-mini" title="View"><i class="fa-fw fa fa-eye fa-fw fa fa-large"></i></a>';
                             } else {
-                                return '<a href="javascript:void(0);" data-name ="viewPolicy" data-id="' + model.id + '" class="btn btn-mini" title="View"><i class="fa-fw fa fa-eye fa-fw fa fa-large"></i></a>\
-                                    <a href="#!/service/' + that.rangerService.id + '/policies/' + model.id + '/edit" class="btn btn-mini" title="Edit"><i class="fa-fw fa fa-edit fa-fw fa fa-large"></i></a>\
-                                    <a href="javascript:void(0);" data-name ="deletePolicy" data-id="' + model.id + '"  class="btn btn-mini btn-danger" title="Delete"><i class="fa-fw fa fa-trash fa-fw fa fa-large"></i></a>';
+                                return '<div class="dropdown">\
+                                        <a href="javascript:void(0);"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="user-dropdown"><span></span><i style=" margin-right: 10px;" class="fa fa-lg fa-ellipsis-v "></i></a>\
+                                        <div class="dropdown-menu">\
+                                            <a class="dropdown-item"  href="javascript:void(0);" data-name ="viewPolicy" data-id="' + model.id + '"  title="View">View</a>\
+                                            <a lass="dropdown-item"  href="#!/service/' + that.rangerService.id + '/policies/' + model.id + '/edit"  title="Edit">Edit</a>\
+                                            <a class="dropdown-item"  href="javascript:void(0);" data-name ="deletePolicy" data-id="' + model.id + '"   title="Delete">Delete</a>\
+                                        </div>\
+                                    </div>';
                                 //You can use rawValue to custom your html, you can change this value using the name parameter.
                             }
                         }
