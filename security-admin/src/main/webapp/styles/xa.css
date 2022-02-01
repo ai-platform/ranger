@@ -3667,14 +3667,20 @@ line-height: 16px;
 
 .service-list-container > div:hover,
 .service-list-container > div.selectedList{
-    color: #FFFFFF;
+    /* color: #FFFFFF;
     background-color: rgba(255,255,255,0.1);
-    border-right: 4px solid #51b5fc;
+    border-right: 4px solid #51b5fc; */
+    background-color: #FFFFFF !important;
+    color: #C53E6C !important;
+    
 }
 
 .service-list-container > div:hover a,
 .service-list-container > div.selectedList a{
   color:#fff;
+}
+.service-list-container > div.selectedList a{
+  color: #A53159;
 }
 
 .component-list-item > div:first-child, 
@@ -5011,7 +5017,12 @@ background-color: #A53159;
   z-index: 10 !important
 }
 
-.dropdown-menu.show{
+/* .dropdown-menu.show{
+  position: fixed !important;
+  margin-left: 2500px !important;
+  margin-top: 24px !important;
+} */
+.dropdown-menu-changes{
   position: fixed !important;
   margin-left: 2500px !important;
   margin-top: 24px !important;
@@ -5022,4 +5033,34 @@ background-color: #A53159;
     height: 89px;
     width: 77%;
     z-index: 9 !important;
+}
+
+.wrap-header-changes{
+  border-bottom: 1px solid #F2F2F2;
+    height: 48px;
+    padding-top: 12px;
+    width: 1027px;
+    padding-left: 12px;
+    margin-left: 1px;
+    background-color: #FFFFFF;
+}
+
+.wrap-changes{
+  margin-top: 1px !important;
+}
+.control-label-changes-left{
+    margin-left: -117px;
+    width: 75px;
+    height: 16px;
+    font-family: Rakuten Sans UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #686868;
+    position: absolute;
+}
+
+.sidebar-list-changes{
+  background-color: #FFFFFF;
 }
