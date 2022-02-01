@@ -890,10 +890,10 @@
                             </rules>
                             <fail>true</fail>
                         </configuration>
-                    </execution>
+                    </execution> -->
 
-                    &lt;!&ndash; duplicate JAVA patch file version validator plugin &ndash;&gt;
-                    <execution>
+                    <!-- duplicate JAVA patch file version validator plugin -->
+                    <!-- <execution>
                         <id>duplicate-java-patch-file-version-validator</id>
                         <goals>
                             <goal>enforce</goal>

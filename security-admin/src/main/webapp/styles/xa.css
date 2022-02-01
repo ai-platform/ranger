@@ -201,7 +201,7 @@ svg:hover > path{
 
 .wrap-header {
   color: #222222;
-  font-size: 16px;
+  font-size: 21px;
   font-weight: 300;
   line-height: 20px;
   margin: 3px 0 0 0px;
@@ -430,6 +430,7 @@ svg:hover > path{
 /* overriding backgrid height property */
 .backgrid td {
   height: auto;
+  border-bottom: none;
 }
 
 /* page logo */
@@ -673,7 +674,8 @@ table.backgrid thead th {
 }
 
 table.backgrid thead {
-  background: #eeeeee;
+  background: #FFFFFF;
+  border-bottom: 1px solid #F2F2F2 !important;
 }
 
 table.backgrid thead tr a {
@@ -949,6 +951,10 @@ table.table-policy tbody tr:hover .nav.nav-option {
   max-width: 184px;
 }
 
+.backgrid tr:not(:last-child) {
+  border-bottom: 1px solid #F2F2F2 !important;
+}
+
 .working.ui-autocomplete-loading {
   background: url('../images/loading.gif') no-repeat right center !important;
 }
@@ -1149,7 +1155,7 @@ ul.tabs > li > a {
   overflow-y: hidden;
   overflow-x: auto;
   -ms-overflow-style: -ms-autohiding-scrollbar;
-  border: 1px solid #dddddd;
+  /* border-bottom: 1px solid #dddddd; */
   -webkit-overflow-scrolling: touch;
 }
 .table-responsive > .table {
@@ -2068,6 +2074,9 @@ td.subgrid-custom-cell{
 }
 .VS-search .VS-icon-search {
         margin-top: 3px;
+        position: absolute;
+    right: 25px;
+    top: 8px;
 }
 /*.VS-search .VS-cancel-search-box {
 	margin-top: 3px;
@@ -3703,16 +3712,32 @@ a:focus,a:hover,a.active,a:active{
   transform: translate(-50%, -50%);
 }
 
-
+.rcp-btn{
+  width: '134px' !important;
+  height: '36px' !important;
+  color: '#C53E6C' !important;
+  border-color: '#C53E6C' !important;
+}
+.rcp-btn:hover{
+  width: '134px' !important;
+  height: '36px' !important;
+  border-color: '#C53E6C' !important;
+  background: #C53E6C !important;
+  color: white !important;
+  
+}
 .btn,
 .btn-default{
   box-shadow: none;
   -webkit-box-shadow:none;
   -moz-box-shadow:none;
-  border:1px solid #d9d9d9;
-  color: #424242;
+  border:1px solid #C53E6C;
   background-image: none;
   background-color: white;
+  border-color: #C53E6C;
+  width: '134px' ;
+  height: '36px' ;
+  color: #C53E6C ;
 }
 
 .btn:hover,
@@ -3721,17 +3746,18 @@ a:focus,a:hover,a.active,a:active{
 .btn-default.active,
 .btn-default.disabled,
 .btn-default:hover{
-  color: #C53E6C!important;
-  border-color: #C53E6C!important;
-  background-color: #FFFFFF!important;
-  outline: none!important;
+  color: #FFFFFF;
+  border-color: #C53E6C;
+  width: '134px' ;
+  height: '36px' ;
+  background: #C53E6C ;
 }
 
 
 .btn-primary{
-  background-color: #C53E6C;
+  background-color: #FFFFFF;
   background-image: none;
-  color: #FFFFFF;
+  color: #C53E6C;
   border-color: #C53E6C;
 }
 
@@ -3741,9 +3767,10 @@ a:focus,a:hover,a.active,a:active{
 .btn-primary.disabled,
 .btn-primary[disabled],
 .btn-primary:hover{
-  background-color:#C53E6C;
+  background-color: #C53E6C;
   background-image: none;
   color: #FFFFFF;
+  border-color: #C53E6C;
 }
 
 .btn-danger{
@@ -3853,7 +3880,10 @@ a:focus,a:hover,a.active,a:active{
 }
 
 .VS-search .VS-search-box{
-  border-radius: 20px;
+  border-radius: 4px;
+    background: white;
+    height: 36px;
+    min-width: 484px;
 }
 
 .VS-search .VS-icon-cancel{
@@ -4098,6 +4128,9 @@ color: #333333;
   padding: 4px 6px;
   font-size: 12px;
   margin-bottom: 2px;
+  color: #C53E6C;
+  background-color: white;
+  border: 1px solid #C53E6C;
 }
 
 .nav-tabs {
@@ -5024,8 +5057,11 @@ background-color: #A53159;
 } */
 .dropdown-menu-changes{
   position: fixed !important;
+}
+.dropdown-menu.show{
+  /* position: fixed !important;
   margin-left: 2500px !important;
-  margin-top: 24px !important;
+  margin-top: 24px !important; */
 }
 
 .nav-fixed{
@@ -5063,4 +5099,43 @@ background-color: #A53159;
 
 .sidebar-list-changes{
   background-color: #FFFFFF;
+}
+.policyTabs{
+  margin-bottom: 10px;
+}
+
+.policyTabs>.nav>.nav-item .active{
+  border-bottom: 2px solid #90003B;
+
+}
+.policyTabs>.nav>.nav-item .active>a{
+  font-size: 14px;
+  color: #90003B;
+
+}
+.policyTabs>nav>.nav-item>a{
+  
+  color: #686868;
+  border: none;
+  background: white;
+
+}
+
+thead>tr:nth-child(2){
+  display: none !important;
+}
+.table-Menu{
+  position: absolute; 
+    left: 0;
+    z-index: 1000;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 0.25rem;
 }

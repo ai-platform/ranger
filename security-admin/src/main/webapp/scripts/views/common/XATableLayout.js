@@ -53,7 +53,7 @@ define(function(require){
     	ui: {},
 
 		gridOpts : {
-			className: 'table table-bordered table-condensed backgrid',
+			className: 'table-condensed backgrid',
 			emptyText : 'No Records found!'
 		},
 
