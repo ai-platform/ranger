@@ -191,10 +191,10 @@
             <artifactId>spring-core</artifactId>
             <version>${springframework.version}</version>
             <exclusions>
-                <exclusion>
-                    <groupId>org.springframework</groupId>
-                    <artifactId>spring-jcl</artifactId>
-                </exclusion>
+				<exclusion>
+					<groupId>org.springframework</groupId>
+					<artifactId>spring-jcl</artifactId>
+				</exclusion>
             </exclusions>
         </dependency>
         <dependency>
@@ -843,7 +843,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
                 <version>1.4.1</version>
-                <executions>
+             <!--   <executions>
                     <execution>
                         <id>duplicate-sql-patch-file-version-validator</id>
                         <goals>
@@ -890,10 +890,10 @@
                             </rules>
                             <fail>true</fail>
                         </configuration>
-                    </execution>
+                    </execution> -->
 
                     <!-- duplicate JAVA patch file version validator plugin -->
-                    <execution>
+                    <!-- <execution>
                         <id>duplicate-java-patch-file-version-validator</id>
                         <goals>
                             <goal>enforce</goal>
@@ -934,7 +934,7 @@
                             <fail>true</fail>
                         </configuration>
                     </execution>
-                </executions>
+                </executions>-->
             </plugin>
         </plugins>
         <resources>
@@ -945,9 +945,3 @@
         </resources>
     </build>
 </project>
-
-
-
-
-
-
