@@ -421,7 +421,7 @@ define(function(require) {
                                         <a href="javascript:void(0);"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="user-dropdown"><span></span><i style=" margin-right: 10px;" class="fa fa-lg fa-ellipsis-v "></i></a>\
                                         <div class="dropdown-menu">\
                                             <a class="dropdown-item"  href="javascript:void(0);" data-name ="viewPolicy" data-id="' + model.id + '"  title="View">View</a>\
-                                            <a lass="dropdown-item"  href="#!/service/' + that.rangerService.id + '/policies/' + model.id + '/edit"  title="Edit">Edit</a>\
+                                            <a class="dropdown-item"  href="#!/service/' + that.rangerService.id + '/policies/' + model.id + '/edit"  title="Edit">Edit</a>\
                                             <a class="dropdown-item"  href="javascript:void(0);" data-name ="deletePolicy" data-id="' + model.id + '"   title="Delete">Delete</a>\
                                         </div>\
                                     </div>';

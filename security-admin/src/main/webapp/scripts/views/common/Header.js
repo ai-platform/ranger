@@ -23,7 +23,7 @@ define(function(require){
 
 	var Backbone		= require('backbone');
 	var Communicator	= require('communicator');
-
+	var App                 = require('App');
 	var Header_tmpl = require('hbs!tmpl/common/Header_tmpl'); 
 	
 	var Header = Backbone.Marionette.ItemView.extend(
@@ -34,12 +34,14 @@ define(function(require){
     	template: Header_tmpl,
         
     	/** ui selector cache */
-    	ui: {},
+    	ui: {
+			'sideCollapes' : '[data-id="sideCollapes"]',
+		},
 
 		/** ui events hash */
 		events: function() {
 			var events = {};
-			//events['change ' + this.ui.input]  = 'onInputChange';
+			events['mousedown ' + this.ui.sideCollapes] = 'sideCollapes';
 			return events;
 		},
 
@@ -69,6 +71,21 @@ define(function(require){
 		/** all post render plugin initialization */
 		initializePlugins: function(){
 		},
+
+        sideCollapes : function (e) {
+            e.stopImmediatePropagation()
+            if (this.collapes) {
+                this.collapes = false;
+                App.rSideBar.$el.addClass('expanded');
+                App.rContent.$el.addClass('expanded-contant');
+                App.rSideBar.$el.removeClass('collapsed');
+            } else {
+                this.collapes = true;
+                App.rSideBar.$el.addClass('collapsed');
+                App.rContent.$el.removeClass('expanded-contant');
+                App.rSideBar.$el.removeClass('expanded');
+            }
+        },
 
 		/** on close */
 		onClose: function(){
