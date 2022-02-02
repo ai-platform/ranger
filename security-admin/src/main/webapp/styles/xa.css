@@ -158,7 +158,7 @@ svg:hover > path{
 .nav-tabs > li > a:focus,
 .nav-tabs > li > a:active {
   background: none;
-  border: 1px solid transparent;
+  border: none;
   color: #999999;
   font-size: 14px;
   margin-bottom: -1px;
@@ -181,7 +181,7 @@ svg:hover > path{
   display: block;
   background-color: #fff;
   border: 1px solid #d6d6d6;
-  margin: 0 0 20px 0;
+  /* margin: 0 0 20px 0; */
   padding: 20px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -3681,7 +3681,7 @@ line-height: 16px;
 .service-list-container > div.selectedList{
     color: #FFFFFF;
     background-color: rgba(255,255,255,0.1);
-    border-right: 4px solid #51b5fc;
+    border-right: 4px solid #A53159;
 }
 
 .service-list-container > div:hover a,
@@ -3699,7 +3699,7 @@ a{
 }
 
 a:focus,a:hover,a.active,a:active{
- color: #2996ba;
+ color: #A53159;
 }
 
 .loading-img{
@@ -3899,6 +3899,8 @@ a:focus,a:hover,a.active,a:active{
 
 .backgrid{
   font-size: 14px;
+  border-bottom: 1px solid #F2F2F2 !important;
+  border-top: 1px solid #F2F2F2 !important;
 }
 
 .form-horizontal .form-group{
@@ -4135,8 +4137,8 @@ color: #333333;
     border-bottom: none;
 }
 .nav-tabs .nav-link {
-  border: 1px solid transparent;
-  background: #ddd;
+  /* border: 1px solid transparent; */
+  /* background: #ddd; */
   margin: 5px 5px 0;
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
@@ -4144,15 +4146,14 @@ color: #333333;
 }
 .nav-tabs .nav-link.active{
   background: #fff;
-  border: 1px solid #d6d6d6;
-  border-bottom: 1px solid transparent;
+  border-bottom: 2px solid #A53159;
 }
 .nav-tabs > .active > a,
 .nav-tabs > .active > a:focus,
 .nav-tabs > .active > a:active,
 .nav-tabs > .active > a:hover {
-    border-bottom: none;
-    background-color: white;
+  border-bottom: 2px solid #A53159;
+    background-color: #FFFFFF;
 }
 
 .m-b-sm{
@@ -5062,7 +5063,7 @@ background-color: #A53159;
 }
 
 .policyTabs>.nav>.nav-item .active{
-  border-bottom: 2px solid #90003B;
+  border-bottom: 2px solid #90003B !important;
 
 }
 .policyTabs>.nav>.nav-item .active>a{
@@ -5099,4 +5100,21 @@ thead>tr:nth-child(2){
 
 .action-icon{
   cursor: pointer;
+}
+.align-end{
+  text-align: end;
+}
+.visual_search{
+  display: inline-flex;
+}
+
+
+.searchInfoIcon svg{
+
+    border: 1px solid #9C9C9C;
+    border-radius: 4px;
+}
+.searchInfoIcon svg:hover{
+
+border: 1px solid #A53159;
 }
