@@ -21,14 +21,16 @@
 define(function(require){
     'use strict';
 
+
 	var Backbone		= require('backbone');
 	var Communicator	= require('communicator');
 	var App                 = require('App');
 	var Header_tmpl = require('hbs!tmpl/common/Header_tmpl'); 
 	
 	var Header = Backbone.Marionette.ItemView.extend(
-	/** @lends Footer */
+	/** @lends Header */
 	{
+
 		_viewName : Header,
 		
     	template: Header_tmpl,
@@ -37,6 +39,7 @@ define(function(require){
     	ui: {
 			'sideCollapes' : '[data-id="sideCollapes"]',
 		},
+
 
 		/** ui events hash */
 		events: function() {
@@ -53,7 +56,8 @@ define(function(require){
 			console.log("initialized a Header ItemView");
 
 			_.extend(this, _.pick(options, ''));
-
+            
+            this.collapes = false,
 			this.bindEvents();
 		},
 
@@ -66,10 +70,6 @@ define(function(require){
 		/** on render callback */
 		onRender: function() {
 			this.initializePlugins();
-		},
-
-		/** all post render plugin initialization */
-		initializePlugins: function(){
 		},
 
         sideCollapes : function (e) {
@@ -85,12 +85,7 @@ define(function(require){
                 App.rContent.$el.removeClass('expanded-contant');
                 App.rSideBar.$el.removeClass('expanded');
             }
-        },
-
-		/** on close */
-		onClose: function(){
-			
-		}
+        }
 
 	});
 
