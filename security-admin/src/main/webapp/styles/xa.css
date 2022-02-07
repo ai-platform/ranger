@@ -5100,3 +5100,28 @@ thead>tr:nth-child(2){
 .action-icon{
   cursor: pointer;
 }
+
+.table-data {
+  border: 1px solid #dee2e6;
+}
+
+.modal-header-font {
+font-family: Rakuten Sans UI;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 21px;
+align-items: center;
+text-align: center;
+color: #333333;
+}
+
+.modal-body-font {
+font-family: Rakuten Sans UI;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 21px;
+align-items: center;
+color: #686868;
+}
