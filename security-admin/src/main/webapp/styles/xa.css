@@ -5100,3 +5100,388 @@ thead>tr:nth-child(2){
 .action-icon{
   cursor: pointer;
 }
+
+/* HK Falguni Changes */
+.wrap-header-changes{
+  border-bottom: 1px solid #F2F2F2;
+    height: 48px;
+    padding-top: 10px;
+    width: 99.8%;
+    padding-left: 12px;
+    margin-left: 1px;
+    background-color: #FFFFFF;
+}
+
+.wrap-changes{
+  margin-top: 1px !important;
+}
+.control-label-changes-left{
+    margin-left: -117px;
+    width: 75px;
+    height: 16px;
+    font-family: Rakuten Sans UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #686868;
+    position: absolute;
+}
+
+.sidebar-list-changes{
+  background-color: #FFFFFF;
+}
+
+.form-horizontal .control-label{
+  font-family: Rakuten Sans UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #686868;
+  }
+
+.form-group.field-name {
+  display: inherit;
+}
+
+.field-name > label.col-sm-3.control-label {
+  text-align: left !important;
+  height: 16px;
+  left: 16px;
+  top: 0px;
+}
+
+.form-group.field-displayName {
+  float: right;
+  display: inherit;
+  margin-top: -90px;
+  width: 52%;
+  /* margin-right: 13px; */
+}
+
+.field-displayName > .col-sm-4 {
+  max-width: 100%;
+  /* width: 487px; */
+}
+
+.field-displayName > label.col-sm-3.control-label {
+  text-align: left !important;
+  max-width: 100%;
+  height: 16px;
+  left: 16px;
+}
+.field-name > .col-sm-4 {
+    max-width: 100%;
+    width: 49%;
+}
+
+.form-group.field-description {
+  display: inherit;
+}
+
+.field-description > label.col-sm-3.control-label {
+  text-align: left !important;
+  height: 16px;
+  left: 16px;
+  top: 0px;
+}
+.field-description .col-sm-4 {
+  max-width: 49%;
+}
+.field-description textarea.form-control {
+  height: 36px;
+}
+
+.form-group.field-isEnabled {
+  display: flow-root;
+    float: left;
+    margin-top: -80px;
+    margin-left: 50%;
+}
+
+.field-isEnabled > label.col-sm-3.control-label{
+  max-width: 140px;
+  left: -30px;
+}
+
+.field-isEnabled label.form-check-label {
+  /* margin-left: 19px; */
+  margin-top: -22px;
+}
+.field-isEnabled .form-check.form-check-inline {
+  padding-left: 31px;
+}
+
+.form-group.field-isEnabled .form-control {
+  margin-left: -42px;
+  background: transparent;
+}
+.field-isEnabled .form-check.form-check-inline {
+  display: table-cell;
+  padding-left: 57px;
+}
+
+.field-isEnabled .form-check-inline .form-check-input {
+  position: absolute;
+  margin-top: 5px;
+  margin-right: 3.3125rem;
+  margin-left: -21px;
+}
+
+.field-tagService {
+  display: flow-root !important;
+}
+
+.field-tagService label.col-sm-3.control-label {
+  text-align: left;
+  left: 13px;
+}
+
+.field-tagService .select2-container .select2-choice{
+  background-image:none;
+}
+.field-tagService .select2-container .select2-choice .select2-arrow{
+  display: none;
+}
+.field-tagService div#s2id_c42_tagService {
+  width: 150% !important;
+}
+
+.select2-container-active .select2-choice{
+  -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.configProp .formHeader {
+  border-bottom: 2px solid #F2F2F2;
+  height: 23px;
+  left: 0px;
+  font-family: Rakuten Sans UI;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  padding-bottom: 34px;
+}
+
+
+.field-username label.col-sm-3.control-label.dirtyField {
+  text-align: left !important;
+  height: 16px;
+  left: 16px;
+  top: 0px;
+}
+
+.form-group.field-username {
+  display: inherit;
+}
+
+.field-username .col-sm-4 {
+  width: 49%;
+  max-width: 49%;
+}
+
+.form-group.field-password {
+  float: right;
+  display: inherit;
+  margin-top: -90px;
+  width: 52%;
+}
+
+.field-password .col-sm-4 {
+  max-width: 100%;
+}
+
+.field-password label.col-sm-3.control-label.dirtyField {
+  text-align: left !important;
+  max-width: 100%;
+  height: 16px;
+  left: 16px;
+}
+.form-group.field-atlas\.rest\.address {
+  display: inherit;
+}
+.field-atlas\.rest\.address > label.col-sm-3.control-label {
+  text-align: left;
+  left: 16px;
+}
+
+.field-atlas\.rest\.address .col-sm-4{
+  width: 49%;
+  max-width: 49%;
+}
+
+.form-group.field-commonNameForCertificate {
+  float: right;
+  display: inherit;
+  margin-top: -90px;
+  width: 52%;
+}
+
+.field-commonNameForCertificate > label.col-sm-3.control-label {
+  text-align: left !important;
+  max-width: 100%;
+  height: 16px;
+  left: 16px;
+}
+.field-commonNameForCertificate .col-sm-4 {
+  max-width: 100%;
+}
+.extraServiceConfigs label.control-label.col-sm-3 {
+  text-align: left;
+  font-family: Rakuten Sans UI;
+  font-size: 16px;
+  line-height: 16px;
+  color: #333333;
+  font-weight: bold;
+}
+
+.extraServiceConfigs .col-sm-5 {
+  max-width: 100%;
+}
+.extraServiceConfigs .form-group{
+  display: inherit;
+}
+.position-relative .table th, .table td{
+  text-align: center;
+}
+
+.js-formInput button.btn.btn-sm.btn-danger {
+  background-color: #FFFFFF;
+  color: #686868;
+  border-color: #FFFFFF;
+}
+.js-formInput button.btn.btn-sm.btn-danger:hover {
+  color: #FFFFFF !important;
+  background-color: #C53E6C !important;
+}
+.extraServiceConfigs .offset-sm-3 {
+  margin-left: 0% !important;
+}
+
+.offset-sm-3 button.btn.btn-sm {
+  display: flex;
+  width: 97px;
+  height: 28px;
+  border: none;
+}
+
+.offset-sm-3 i.fa-fw.fa.fa-plus {
+  padding: 4px;
+  padding-right: 17px;
+}
+.offset-sm-3 .btn:focus {
+  /* outline: 0; */
+  box-shadow:none;
+}
+.text-right {
+  text-align: left !important;
+  border: 1px solid #C53E6C;
+  border-radius: 4px;
+  margin-left: 17px;
+  width: 168px;
+}
+
+.text-right input.btn.btn-sm {
+  border: none;
+}
+
+.text-right path {
+  fill: #C53E6C !important;
+}
+
+/* .text-right:hover{
+  color: #FFFFFF;
+  background-color: #C53E6C; 
+}
+.text-right:hover svg{
+  color: #FFFFFF;
+  fill: #FFFFFF;
+}
+
+.col-sm-3.text-right:hover .text-right path{
+  color: #FFFFFF;
+  background-color: #C53E6C;
+  fill: #FFFFFF;
+}
+.col-sm-3.text-right:hover .text-right .btn{
+  color: #FFFFFF;
+  background-color: #C53E6C;
+} */
+
+.text-right:hover input {
+  color: white !important;
+  background-color: #C53E6C !important;
+}
+
+.col-sm-3.text-right:hover {
+  color: white !important;
+  background: #C53E6C !important;
+}
+
+.text-right:hover path {
+  fill: white !important;
+}
+input.button-test {
+  background: none;
+  border: none;
+  color: #C53E6C;
+}
+
+.form-changes{
+  float: right;
+  padding: 0 !important;
+  background-color: white;
+  border: none;
+}
+
+/* .component-list-item > .service-list-container:hover {
+  background-color: #A53159 !important;
+  color: white;
+} */
+
+.component-list-item > .service-list-container:hover {
+  background-color: transparent!important;
+  color: #C53E6C;
+}
+.component-list-item > .service-list-container > div.selectedList a {
+  color: #C53E6C;
+  /* background: #A53159 !important; */
+}
+
+.component-list-item .service-list-container > div.selectedList {
+  color: #C53E6C;
+  background-color: transparent;
+  border-right: none;
+}
+
+.component-list-item .service-list-container > div:hover a{
+  color: #C53E6C;
+}
+/* .component-list-item .tag-header:hover {
+  background: #A53159;
+  color: white;
+} */
+
+/* .component-list-item:hover{
+background-color: transparent;
+color: #686868;
+} */
+
+.components-header:hover .service-list-container {
+  color: #A53159 !important;
+  background-color: white !important;
+}
+.service-list-container > div:hover{
+  color: #A53159;
+    background-color: rgba(255,255,255,0.1);
+    border-right: none;
+}
+
+.wrap-policy-changes{
+  margin-top: -8px !important;
+}
+
+.form-group.field-id {
+  display: inherit;
+}

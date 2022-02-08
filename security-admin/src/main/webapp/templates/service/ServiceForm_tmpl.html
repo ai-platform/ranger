@@ -16,29 +16,29 @@
 --}}
 <form class="form-horizontal">
     <fieldset class="configProp">
-        <p class="formHeader">
+        <!-- <p class="formHeader">
             {{tt 'lbl.serviceDetails'}} :
-        </p>
+        </p> -->
         <div class="serviceDetail" data-fields="{{serviceDetail}}"></div>
     </fieldset>
     <fieldset class="configProp">
         <p class="formHeader">
-            Config Properties :
+            Config Properties 
         </p>
         {{#compare this.serviceConfig "neq" ''}}
             <div class="serviceConfig" data-fields="{{serviceConfig}}"></div>
         {{/compare}}
         <div class="extraServiceConfigs"></div>
     </fieldset>
-    <fieldset class="configProp">
+    <!-- <fieldset class="configProp">
         <p class="formHeader">
             Audit Filter :
-            <input type="checkbox" data-id="renderAuditFilter">
+            <input type="checkbox" data-id="renderAuditFilter"> -->
            <!--  <label class="toggle-control">
                 <input type="checkbox" data-id="renderAuditFilter">
                 <span class="control"></span>
             </label> -->
-        </p>
+        <!-- </p>
         <div data-customfields="aduitFilterConfig">
             <div class="form-group">
                 <div class="controls">
@@ -48,13 +48,17 @@
                 </div>
             </div>
         </div>
-    </fieldset>
+    </fieldset> -->
     <div>
         <div class="form-group field-username hdfs hive knox storm">
             <label class="control-label" for="c12_username"></label>
             <div class="col-sm-3 text-right">
                 <span data-editor="">
-                    <input data-id="testConn" type="button" value="Test Connection" class="btn btn-sm">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.47148 10C4.70771 6.33756 7.47926 3.59073 10.8579 3.59073H14.5203V7.25317H18.1827V8.16878H14.5203V11.8312H18.1827V12.7468H14.5203V16.4093H10.8579C7.47834 16.4093 4.70771 13.6624 4.47148 10.9156H1.81748V10H4.47148ZM5.3642 10C5.3642 13.0297 7.8281 15.4937 10.8579 15.4937H13.6047V4.50634H10.8579C7.8281 4.50634 5.3642 6.97025 5.3642 10Z" fill="#C53E6C"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8579 3.59073C7.47926 3.59073 4.70771 6.33756 4.47148 10H1.81748V10.9156H4.47148C4.70771 13.6624 7.47834 16.4093 10.8579 16.4093H14.5203V12.7468H18.1827V11.8312H14.5203V8.16878H18.1827V7.25317H14.5203V3.59073H10.8579ZM14.6703 7.10317V3.44073H10.8579C7.43509 3.44073 4.63377 6.18751 4.3321 9.85H1.66748V11.0656H4.33586C4.65712 13.8454 7.45901 16.5593 10.8579 16.5593H14.6703V12.8968H18.3327V11.6812H14.6703V8.31878H18.3327V7.10317H14.6703ZM5.5142 10C5.5142 12.9469 7.91094 15.3437 10.8579 15.3437H13.4547V4.65634H10.8579C7.91094 4.65634 5.5142 7.05309 5.5142 10ZM10.8579 15.4937C7.8281 15.4937 5.3642 13.0297 5.3642 10C5.3642 6.97025 7.8281 4.50634 10.8579 4.50634H13.6047V15.4937H10.8579Z" fill="#C53E6C"></path>
+                        </svg>
+                    <input data-id="testConn" type="button" value="Test Connection" class="btn btn-sm button-test">
                 </span>
             </div>
         </div>
