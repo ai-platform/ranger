@@ -293,7 +293,7 @@ define(function(require) {
             var model = new RangerZone(this.zoneModel.attributes);
             model.collection = this.collection;
             XAUtil.confirmPopup({
-                msg: 'Are you sure want to delete ? 4',
+                msg: 'Are you sure want to delete ?',
                 callback: function() {
                     XAUtil.blockUI();
                     model.destroy({

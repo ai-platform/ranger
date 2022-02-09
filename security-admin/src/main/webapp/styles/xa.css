@@ -5125,3 +5125,9 @@ line-height: 21px;
 align-items: center;
 color: #686868;
 }
+
+.policyDetailModalHeader {
+  flex-direction: row;    
+  display: flex;
+  justify-content: space-between
+}

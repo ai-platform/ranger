@@ -401,7 +401,7 @@ define(function(require){
 			model.collection = this.collection;
 			XAUtil.confirmPopup({
 				//msg :localize.tt('msg.confirmDelete'),
-				msg :'Are you sure want to delete ? 2',
+				msg :'Are you sure want to delete ?',
 				callback : function(){
 					XAUtil.blockUI();
 					model.destroy({

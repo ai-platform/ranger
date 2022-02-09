@@ -14,54 +14,63 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 --}}
-<div class="serviceInfo">
+<div class="serviceInfo policyDetailModalHeader">
     <div>
         <p>
             <strong>{{tt 'lbl.serviceName'}} :</strong> {{PolicyDetails.service}}
+        </p>
+        <p>
+            <strong>{{tt 'lbl.updatedBy'}} :</strong> {{PolicyDetails.updatedBy}}
+        </p>
+        <p>
+            <strong>{{tt 'lbl.updatedOn'}} :</strong> {{PolicyDetails.updateTime}}
         </p>
     </div>
     <div>
         <p>
             <strong>{{tt 'lbl.serviceType'}} :</strong> {{PolicyDetails.serviceType}}
         </p>
+        <p>
+            <strong>{{tt 'lbl.createdBy'}} :</strong> {{PolicyDetails.createdBy}}
+        </p>
+        <p>
+            <strong>{{tt 'lbl.createdOn'}} :</strong> {{PolicyDetails.createTime}}
+        </p>
     </div>
 </div>
 <div id="policyDetails">
-    <p class="formHeader">
-        {{tt 'h.policyDetails'}} :
-    </p>
     <div class="table-responsive">
         <table class="table  table-condensed">
             <tbody>
                 <tr>
-                    <td>
+                    <td class="table-data">
                         {{tt 'lbl.policyType'}}
                     </td>
-                    <td>
+                    <td class="table-data">
                         <div class="controls"><label class="badge badge-ranger" style="cursor: auto;">{{policyType}}</label></div>
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td class="table-data">
                         {{tt 'lbl.policyId'}}
                     </td>
-                    <td>
+                    <td class="table-data">
                         <div class="controls"><label class="badge badge-ranger" style="cursor: auto;">{{PolicyDetails.id}}</label></div>
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td class="table-data">
                         {{tt 'lbl.version'}}
                     </td>
-                    <td>
+                    <td class="table-data">
                         <div class="controls"><label class="badge badge-ranger" style="cursor: auto;">{{PolicyDetails.version}}</label></div>
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td class="table-data">
                         {{tt 'lbl.policyName'}}
                     </td>
-                    <td>
+                    <td class="table-data"> 
                         <span>{{PolicyDetails.name}}</span>
                         <div class="text-right">
                             <span class="badge badge-dark">{{PolicyDetails.policyPriority}}</span>
@@ -70,10 +79,10 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td class="table-data">
                         {{tt 'lbl.policyLabels'}}
                     </td>
-                    <td>
+                    <td class="table-data">
                         {{#ifCond PolicyDetails.policyLabels.length '==' "0"}}
                             --
                         {{else}}
@@ -85,10 +94,10 @@
                 </tr>
                 {{#each PolicyDetails.resources}}
                     <tr>
-                        <td>
+                        <td class="table-data">
                             {{this.label}}
                         </td>
-                        <td>
+                        <td class="table-data">
                             {{#each this.values}}
                                 <span class="badge badge-info">{{this}}</span>
                             {{/each}}
@@ -98,31 +107,31 @@
                     </tr>
                 {{/each}}
                 <tr>
-                    <td>
+                    <td class="table-data">
                         {{tt 'lbl.description'}}
                     </td>
                     {{#ifCond PolicyDetails.description '==' ""}}
-                        <td>
+                        <td class="table-data">
                             --
                         </td>
                     {{else}}
-                        <td>
+                        <td class="table-data">
                             {{PolicyDetails.description}}
                         </td>
                     {{/ifCond}}
                 </tr>
                 <tr>
-                    <td>
+                    <td class="table-data">
                         {{tt 'lbl.auditLogging'}}
                     </td>
-                    <td>
+                    <td class="table-data">
                         <span class="badge badge-info">{{PolicyDetails.isAuditEnabled}}</span>
                     </td>
                 </tr>
                 <tr>
                     {{#if PolicyDetails.zoneName}}
-                        <td>{{tt 'lbl.zoneName'}}</td>
-                        <td>
+                        <td class="table-data">{{tt 'lbl.zoneName'}}</td>
+                        <td class="table-data">
                             {{#if PolicyDetails.zoneName}}
                                 <span class="badge badge-dark">{{PolicyDetails.zoneName}}</span>
                             {{else}}
@@ -298,21 +307,3 @@
         {{/if}}
     {{/compare}}
 {{/each}}
-<div class="updateInfo">
-    <div class="pull-left">
-        <p>
-            <strong>{{tt 'lbl.updatedBy'}} :</strong> {{PolicyDetails.updatedBy}}
-        </p>
-        <p>
-            <strong>{{tt 'lbl.updatedOn'}} :</strong> {{PolicyDetails.updateTime}}
-        </p>
-    </div>
-    <div class="pull-right">
-        <p>
-            <strong>{{tt 'lbl.createdBy'}} :</strong> {{PolicyDetails.createdBy}}
-        </p>
-        <p>
-            <strong>{{tt 'lbl.createdOn'}} :</strong> {{PolicyDetails.createTime}}
-        </p>
-    </div>
-</div>

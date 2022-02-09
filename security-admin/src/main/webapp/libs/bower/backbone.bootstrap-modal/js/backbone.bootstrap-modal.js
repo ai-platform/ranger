@@ -33,7 +33,7 @@
     <% } %>\
     <div class="modal-body">{{content}}</div>\
     <% if (showFooter) { %>\
-      <div class="modal-footer">\
+      <div class="modal-footer" style="justify-content: space-between;">\
         <% if (allowCancel) { %>\
           <% if (cancelText) { %>\
             <a href="#" class="btn cancel btn-sm">{{cancelText}}</a>\

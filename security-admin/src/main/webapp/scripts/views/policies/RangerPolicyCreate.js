@@ -300,7 +300,7 @@ define(function(require){
 		onDelete :function(){
 			var that = this;
 			XAUtil.confirmPopup({
-				msg :'Are you sure want to delete ? 1',
+				msg :'Are you sure want to delete ?',
 				callback : function(){
 					XAUtil.blockUI();
 					that.model.destroy({
