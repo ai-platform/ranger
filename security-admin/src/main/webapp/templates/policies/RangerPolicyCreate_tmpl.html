@@ -17,9 +17,10 @@
 {{#if editPolicy}}
 <h4> {{tt 'h.editPolicy'}}</h4>
 {{else}}
-<h4> {{tt 'h.createPolicy'}} </h4>
+<!-- <h4> {{tt 'h.createPolicy'}} </h4> -->
+<h4 class="wrap-header-changes">Policy Details</h4>
 {{/if}}
-<div class="wrap non-collapsible ">
+<div class="wrap non-collapsible wrap-policy-changes ">
     <div class="alert alert-danger" data-id="policyDisabledAlert" style="display:none;">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
         <strong>Warning !</strong> {{tt 'msg.policyDisabledMsg'}}
