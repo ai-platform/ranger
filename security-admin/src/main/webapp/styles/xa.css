@@ -4583,10 +4583,12 @@ ul.tagit input[type="text"]{
 
 .policy-form [fieldclass="resorces-with-label-css"] > .control-label{
   top:-30px;
+  left: 16px;
 }
 
 .policy-form [fieldclass="resorces-with-label-css"]{
   margin-bottom:30px;
+  display: block;
 }
 
 .policy-form .sameLevelDropdown {
@@ -5484,4 +5486,53 @@ color: #686868;
 
 .form-group.field-id {
   display: inherit;
+}
+.field-id label.control-label.col-sm-3 {
+  left: 16px;
+}
+
+.col-md-4 a.btn.btn-primary.pull-right.m-b-md.btn-sm {
+  margin-right: 238%;
+  width: 152px;
+}
+
+.col-sm-4 div#c43_isEnabled {
+  margin-left: 201%;
+  margin-top: -2px;
+}
+
+.policy-form .table-responsive > .table {
+  margin-top: 136px;
+}
+
+.policy-form .form-group.field-policyLabels {
+  margin-bottom: 40px;
+  margin-left: 104%;
+  margin-top: -90px;
+  width: 58%;
+  display: block;
+}
+
+.policy-form .form-group.field-isAuditEnabled {
+  margin-left: 57%;
+  margin-top: -80px;
+  width: 65%;
+  display: flow-root;
+}
+
+.field-policyLabels .col-sm-4 {
+  max-width: 84%;
+}
+
+.field-policyLabels label.col-sm-3.control-label {
+  left: 16px;
+}
+
+.form-group.field-tag {
+  max-width: 175%;
+  width: 152%;
+}
+
+.table-permission thead{
+  background-color: none;
 }
