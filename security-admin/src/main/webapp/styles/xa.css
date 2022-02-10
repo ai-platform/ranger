@@ -1626,7 +1626,7 @@ table.table.backgrid thead th.resourceType {
 
 /* Login Page */
 body.login {
-  background: #292929;
+  background: #FFFFFF;
   padding: 0;
 }
 .login #signin-container {
@@ -1637,6 +1637,7 @@ body.login {
   text-align: center;
   width: 100%;
   margin-bottom: 20px;
+  background-color: #686868;
 }
 
 .icon-sign-in {
@@ -1668,7 +1669,7 @@ body.login {
 }
 .login .fields {
   padding: 20px;
-  background-color: rgba(0,0,0,0.15);
+  background-color: transparent;
 
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -5635,5 +5636,119 @@ a.editable.editable-click.editable-empty {
 }
 
 table.table.condition-group-table {
-  margin-top: 209px;
+  margin-top: 209px !important;
+}
+
+
+.form-group.field-passwordConfirm {
+  display: inherit;
+}
+
+.field-passwordConfirm label.col-sm-3.control-label {
+  text-align: left !important;
+  height: 16px;
+  left: 16px;
+  top: 0px;
+}
+
+.field-passwordConfirm .col-sm-4 {
+  width: 49%;
+  max-width: 49%;
+}
+
+.form-group.field-firstName{
+  display: inherit;
+}
+
+.field-firstName label.col-sm-3.control-label {
+  text-align: left !important;
+  height: 16px;
+  left: 16px;
+  top: 0px;
+}
+.field-firstName .col-sm-4{
+  width: 49%;
+  max-width: 49%;
+}
+
+.form-group.field-lastName {
+  float: right;
+  display: inherit;
+  margin-top: -90px;
+  width: 52%;
+}
+
+.field-lastName label.col-sm-3.control-label {
+  text-align: left !important;
+  max-width: 100%;
+  height: 16px;
+  left: 16px;
+}
+
+.field-lastName .col-sm-4 {
+  max-width: 100%;
+}
+
+
+.form-group.field-emailAddress{
+  display: inherit;
+}
+
+.field-emailAddress label.col-sm-3.control-label {
+  text-align: left !important;
+  height: 16px;
+  left: 16px;
+  top: 0px;
+}
+.field-emailAddress .col-sm-4{
+  width: 49%;
+  max-width: 49%;
+}
+
+.form-group.field-userRoleList {
+  float: right;
+  display: inherit;
+  margin-top: -90px;
+  width: 52%;
+}
+
+.field-userRoleList label.col-sm-3.control-label {
+  text-align: left !important;
+  max-width: 100%;
+  height: 16px;
+  left: 16px;
+}
+
+.field-userRoleList .col-sm-4{
+  max-width: 100%;
+}
+
+.form-group.field-groupIdList {
+  display: inherit;
+}
+
+.field-groupIdList label.control-label.col-sm-3 {
+  text-align: left !important;
+  height: 16px;
+  left: 16px;
+  top: 0px;
+}
+
+.col-md-8 > .text-right {
+  width: 100%;
+}
+
+h3.wrap-header.bold.search-header {
+  background-color: #FFFFFF;
+}
+
+.expanded-contant .form-group.field-isEnabled .policy-enable-disable {
+  margin-left: 1vw;
+}
+
+
+.ranger-policy .form-group.field-isEnabled .policy-enable-disable {
+  margin-left: 1vw;
+  margin-top: 1px;
+  width: 100px;
 }
