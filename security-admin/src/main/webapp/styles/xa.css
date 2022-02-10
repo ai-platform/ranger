@@ -3793,7 +3793,7 @@ a:focus,a:hover,a.active,a:active{
 }
 
 .formHeader,.search-header {
-  border-color: #A53159;
+  border-color: #F2F2F2;
 }
 
 .dropdown-menu > li > a:hover,
@@ -3848,8 +3848,8 @@ a:focus,a:hover,a.active,a:active{
   padding: 19px 20px 20px;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: #f5f5f5;
-  border-top: 1px solid #e5e5e5;
+  background-color: transparent;
+  /* border-top: 1px solid #e5e5e5; */
 }
 
 .VS-search .VS-search-box{
@@ -5534,5 +5534,74 @@ color: #686868;
 }
 
 .table-permission thead{
-  background-color: none;
+  background-color: transparent;
+}
+
+div#s2id_autogen11, div#s2id_autogen7, div#s2id_autogen9 {
+  width: 181px !important;
+}
+
+.ui-sortable-handle a#policyConditions {
+  width: 124px;
+  margin-left: 12px;
+  border: none;
+}
+
+button.btn.btn-sm.add-conditions {
+    margin-right: 111px;
+    margin-top: -23px;
+    display: block !important;
+    border: none;
+    margin-left: -10px;
+}
+
+button.btn.btn-sm.add-permissions {
+  margin-right: 120px;
+  margin-top: -23px;
+  display: block !important;
+  border: none;
+}
+
+a.editable.editable-click.editable-empty {
+  width: 96px;
+  border: none;
+}
+.form-indent-right .wrap-header.search-header {
+  background-color: white;
+  border-color: #F2F2F2;
+}
+
+.select2-container{
+  width: 181px !important;
+}
+
+.position-relative .m-t-sm > button.btn.btn-sm {
+  display: flex;
+  width: 97px;
+  height: 28px;
+  border: none;
+}
+
+.m-t-sm i.fa-fw.fa.fa-plus {
+  padding: 4px;
+  padding-right: 17px;
+}
+
+.condition-group-table th{
+  background-color: transparent;
+}
+
+.col-md-9.offset-md-3 {
+  margin-left: 88%;
+}
+.form-actions button:first-child {
+  margin-left: 0 !important;
+}
+
+.form-actions button:nth-child(n) {
+  margin-left: -118px !important;
+}
+
+table.table.condition-group-table {
+  margin-top: 209px;
 }
