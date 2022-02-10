@@ -24,16 +24,16 @@
   var template = _.template('\
     <div class="modal-dialog modal-lg"><div class="modal-content">\
     <% if (title) { %>\
-      <div class="modal-header">\
-        <h4 class="modal-title">{{title}}</h4>\
+      <div class="modal-header" style="border-color: white">\
+        <h4 class="modal-title modal-header-font">{{title}}</h4>\
         <% if (allowCancel) { %>\
-          <a class="close">&times;</a>\
+          <a class="close"><img src="images/close-icon.png"></a>\
         <% } %>\
       </div>\
     <% } %>\
     <div class="modal-body">{{content}}</div>\
     <% if (showFooter) { %>\
-      <div class="modal-footer">\
+      <div class="modal-footer" style="justify-content: space-between;">\
         <% if (allowCancel) { %>\
           <% if (cancelText) { %>\
             <a href="#" class="btn cancel btn-sm">{{cancelText}}</a>\
