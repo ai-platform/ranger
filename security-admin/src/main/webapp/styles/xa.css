@@ -181,7 +181,7 @@ svg:hover > path{
   display: block;
   background-color: #fff;
   border: 1px solid #d6d6d6;
-  margin: 0 0 20px 0;
+  /* margin: 0 0 20px 0; */
   padding: 20px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -3287,6 +3287,7 @@ ul.zone-listing-new > li {
 ul.zone-listing-new > li:hover {
   color: #FFFFFF !important;
   background-color: #A53159;
+  border-radius: 4px;
 }
 
 
@@ -4218,7 +4219,7 @@ color: #333333;
 
 /*For reports sidemenu*/
 .listData {
-    padding-bottom: 5px;
+    /* padding-bottom: 5px; */
 }
 
 .form-control{
@@ -5519,14 +5520,15 @@ color: #686868;
 }
 
 .form-group.field-id {
-  display: inherit;
+  /* display: inherit; */
+  display: -webkit-box;
 }
 .field-id label.control-label.col-sm-3 {
   left: 16px;
 }
 
 .col-md-4 a.btn.btn-primary.pull-right.m-b-md.btn-sm {
-  margin-right: 238%;
+  margin-right: 159%;
   width: 152px;
 }
 
@@ -5771,3 +5773,29 @@ h3.wrap-header.bold.search-header {
 
 border: 1px solid #A53159;
 }
+.btn-danger:focus, .btn-danger:active, .btn-danger.active, .btn-danger.disabled, .btn-danger[disabled], .btn-danger:hover {
+  background-color: #C53E6C;
+  color: #FFFFFF !important;
+  border-color: #C53E6C !important;
+}
+
+.btn-danger {
+  background-color: #FFFFFF;
+  color: #C53E6C;
+  border-color: #C53E6C;
+}
+
+.field-tagService .select2-container {
+  width: 151% !important;
+}
+
+.header-menu a.user-dropdown {
+  text-decoration: none;
+}
+
+.fields input:focus-visible {
+  border: 1px solid #C53E6C !important;
+  outline: 1px solid #C53E6C !important;
+  background-color: transparent !important;
+}
+

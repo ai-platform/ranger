@@ -65,9 +65,9 @@
         <!-- Page content
         ================================================== -->
         <section id="signin-container" style="margin-top: 4.5px;">
-            <div class="l-logo">
+            <!-- <div class="l-logo">
                 <img src="images/ranger_logo.png" alt="Ranger logo">
-            </div>
+            </div> -->
             <form action="" method="post" accept-charset="utf-8">
                 <fieldset>
                     <div class="fields">
