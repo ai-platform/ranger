@@ -5753,3 +5753,19 @@ h3.wrap-header.bold.search-header {
   margin-top: 1px;
   width: 100px;
 }
+
+.btn-danger:focus, .btn-danger:active, .btn-danger.active, .btn-danger.disabled, .btn-danger[disabled], .btn-danger:hover {
+  background-color: #C53E6C;
+  color: #FFFFFF !important;
+  border-color: #C53E6C !important;
+}
+
+.btn-danger {
+  background-color: #FFFFFF;
+  color: #C53E6C;
+  border-color: #C53E6C;
+}
+
+.field-tagService .select2-container {
+  width: 151% !important;
+}
