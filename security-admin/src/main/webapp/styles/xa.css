@@ -5753,3 +5753,21 @@ h3.wrap-header.bold.search-header {
   margin-top: 1px;
   width: 100px;
 }
+
+.align-end{
+  text-align: end;
+}
+.visual_search{
+  display: inline-flex;
+}
+
+
+.searchInfoIcon svg{
+
+    border: 1px solid #9C9C9C;
+    border-radius: 4px;
+}
+.searchInfoIcon svg:hover{
+
+border: 1px solid #A53159;
+}
