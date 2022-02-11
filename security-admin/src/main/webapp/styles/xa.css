@@ -278,7 +278,7 @@ svg:hover > path{
 
 .toggle {
   height: 28px;
-  width: 80px;
+  width: 40px !important;
 }
 .toggle-slide {
   overflow: hidden;
@@ -335,7 +335,9 @@ svg:hover > path{
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 .toggle-xa .toggle-slide .toggle-off {
-  background: #cccccc;
+  background: #ffffff;
+  color: #ffffff;
+  background-color: #ffffff;
   -webkit-border-top-right-radius: 999px;
   -moz-border-radius-topright: 999px;
   border-top-right-radius: 999px;
@@ -355,9 +357,9 @@ svg:hover > path{
 }
 .toggle-xa .toggle-slide .toggle-blob {
   background: #fff;
-  -webkit-border-radius: 9999px;
-  -moz-border-radius: 9999px;
-  border-radius: 9999px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
   background-color: #ebebeb;
   background-image: -moz-linear-gradient(top, #ffffff, #cccccc);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#cccccc));
@@ -542,6 +544,7 @@ svg:hover > path{
 /* toggle */
 .toggle-xa .toggle-slide {
   box-shadow: 0 0 0 1px #999;
+  border-radius: 4px;
 }
 
 .toggle {
@@ -670,6 +673,7 @@ table.backgrid thead th, table.backgrid thead td {
 
 table.backgrid thead th {
   background: transparent;
+  text-align: left;
 }
 
 table.backgrid thead {
@@ -3832,9 +3836,11 @@ a:focus,a:hover,a.active,a:active{
 
 .toggle-xa .toggle-slide .toggle-on {
   background: #A53159;
-  color: #fff;
+  color: #A53159;
   background-image: none;
   background-color:#A53159;
+  width: 30px !important;
+  border-radius: 0;
 }
 
 .btn-group.open .btn-primary.dropdown-toggle {
@@ -5799,3 +5805,13 @@ border: 1px solid #A53159;
   background-color: transparent !important;
 }
 
+.toggle-on:not(.active) ~ .toggle-blob{
+  margin-left: 30px !important;
+}
+
+.toggle-on.active ~ .toggle-blob{
+  border: 4px solid white;
+  background-color: #90003B !important;
+  border-radius: 4px;
+  background: #90003B;
+}
