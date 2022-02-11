@@ -2299,7 +2299,8 @@ textarea:read-only{
     margin-left: 10px;
 }
 .margin-left-min-30{
-        margin-left: -20px;
+        /* margin-left: -20px; */
+        margin-top: 10px;
 }
 .shorten-label {
     max-width: 180px;
@@ -5135,8 +5136,8 @@ color: #686868;
   justify-content: space-between
 }
 
+
     /* HK Falguni Changes */
-    
 .wrap-header-changes{
     border-bottom: 1px solid #F2F2F2;
     height: 48px;
