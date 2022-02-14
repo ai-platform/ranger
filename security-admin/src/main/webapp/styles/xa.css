@@ -72,7 +72,7 @@ body {
   font-weight: 600;
   text-decoration: none;
   padding: 9px 15px;
-  padding-top: 24px;
+  padding-top: 20px;
   padding-bottom: 18px;
 }
 .tab-bar{
@@ -2967,7 +2967,7 @@ color: #333333;
 }
 
 .list-container {
-    padding: 15px;
+    padding: 16px;
     margin-top: 45px;
     background-color: #FFFFFF;
 }
@@ -5073,7 +5073,7 @@ background-color: #A53159;
 }
 
 .policyTabs>.nav>.nav-item .active{
-  border-bottom: 2px solid #90003B;
+  border-bottom: 2px solid #90003B !important;
 
 }
 .policyTabs>.nav>.nav-item .active>a{
@@ -5767,6 +5767,7 @@ h3.wrap-header.bold.search-header {
 }
 .visual_search{
   display: inline-flex;
+  margin-right: 1%;
 }
 
 
@@ -5774,6 +5775,7 @@ h3.wrap-header.bold.search-header {
 
     border: 1px solid #9C9C9C;
     border-radius: 4px;
+    margin-bottom: 31px;
 }
 .searchInfoIcon svg:hover{
 
@@ -5815,3 +5817,29 @@ border: 1px solid #A53159;
   border-radius: 4px;
   background: #90003B;
 }
+
+.align-end .clearfix.btn-right {
+  margin-top: -2px;
+}
+
+.policyTabs .nav-tabs > .active > a {
+  border-bottom: 2px solid #90003B !important;
+  color: #90003B;
+}
+
+.policyTabs a.nav-link {
+  background: transparent !important;
+}
+
+.page-manager-sidebar .list-container {
+  margin-top: 62px;
+}
+
+.page-manager-sidebar .btn.btn-primary.btn-sm {
+  margin-left: 86px !important;
+}
+
+.container-fluid {
+  height: 63px !important;
+}
+
