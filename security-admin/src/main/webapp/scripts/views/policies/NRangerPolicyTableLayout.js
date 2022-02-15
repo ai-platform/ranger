@@ -418,7 +418,7 @@ define(function(require) {
                                 return '<a href="javascript:void(0);" data-name ="viewPolicy" data-id="' + model.id + '" class="btn btn-mini" title="View"><i class="fa-fw fa fa-eye fa-fw fa fa-large"></i></a>';
                             } else {
                                 return '<div class="dropdown">\
-                                        <a href="javascript:void(0);"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="user-dropdown"><span></span><i style=" margin-right: 10px;" class="fa fa-lg fa-ellipsis-v "></i></a>\
+                                        <a href="javascript:void(0);"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="user-dropdown"><span></span><img src="images/threeDots.png" height="14px" width="14px"></a>\
                                         <div class="dropdown-menu">\
                                             <a class="dropdown-item"  href="javascript:void(0);" data-name ="viewPolicy" data-id="' + model.id + '"  title="View">View</a>\
                                             <a class="dropdown-item"  href="#!/service/' + that.rangerService.id + '/policies/' + model.id + '/edit"  title="Edit">Edit</a>\
