@@ -354,6 +354,7 @@ svg:hover > path{
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffb3b3b3', endColorstr='#ffe6e6e6', GradientType=0);
   *background-color: #a6a6a6;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  visibility: hidden; 
 }
 .toggle-xa .toggle-slide .toggle-blob {
   background: #fff;
@@ -1712,7 +1713,7 @@ body.login {
   border-radius: 3px;
 }
 .login label {
-  color: #ADACAC;
+  color: #333333;
   font-size: 14px;
   font-weight: bold;
 }
@@ -2603,7 +2604,7 @@ textarea:read-only{
   width: 100%;
   float: left;
   min-height: 80vh;
-  border-left: 1px #CCC solid;
+  /* border-left: 1px #CCC solid; */
 }
 .default-zone {
   position: relative;
@@ -2699,6 +2700,7 @@ textarea:read-only{
 }
 .select2-container.select2-container-disabled .select2-choice {
   cursor: not-allowed;
+  height: 36px;
 }
 .disabled {
   cursor: not-allowed;
@@ -2959,7 +2961,8 @@ color: #333333;
 
 .components-header {
   color : #686868;
-  border-radius: 4px
+  border-radius: 4px;
+  height: 44px;
 }
 
 .listData{
@@ -2987,7 +2990,7 @@ color: #333333;
 }
 
 .list-filter > div{
-  margin-top: 20px;
+  margin-top: 16px;
     display: block;
     padding: 0;
 }
@@ -3068,6 +3071,7 @@ color: #A53159;
 /*use below if you cant remove width from select2 */
 .list-filter{
   overflow:hidden;
+  margin-top: -15px;
 }
 
 .list-filter input, .list-filter{
@@ -3221,8 +3225,9 @@ section#r_content{
   min-height:80vh !important;
 }
 .content-block{
-  background-color: #E5E5E5;
+  background-color: #F2F2F2;
   padding: 16px;
+  width: 102.5%;
   /* margin-top: 80px; */
 
 }
@@ -3526,7 +3531,8 @@ li.selected a{
 i#collapesService {
     position: absolute;
     display: block;
-    left: 0px;
+    right: 9px;
+    top: 14px;
 }
 
 .list-header > h4 ~ a, 
@@ -3699,6 +3705,7 @@ line-height: 16px;
 .component-list-item > div:first-child, 
 .component-list-item .service-list-container {
     margin-top: 5px;
+    height: 44px;
 }/*Overriden styles - Use later for bootstrap 3*/
 
 a{
@@ -4076,6 +4083,7 @@ color: #333333;
 .list-header > h5 {
     float: none;
     padding-top: 10px;
+    text-transform: none;
 }
 
 .no-chevron{
@@ -4237,7 +4245,12 @@ color: #333333;
 }
 
 .select2-container .select2-choice > .select2-chosen {
-    font-size: 13px;
+    font-size: 14px;
+    padding-top: 2px;
+    font-family: Rakuten Sans UI;
+    font-style: normal;
+    font-weight: normal;
+    padding-left: 8px;
 }
 
 /*.select2-container.form-control,
@@ -4644,6 +4657,7 @@ ul.tagit input[type="text"]{
     border: 1px solid #ced4da !important;
     border-radius: 0.25rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    height: 36px !important;
 }
 .policy-form .form-group.field-path[fieldclass="resorces-with-label-css"] .ui-widget.ui-widget-content {
     margin-top: -30px;
@@ -5146,17 +5160,20 @@ color: #686868;
 
     /* HK Falguni Changes */
 .wrap-header-changes{
-    border-bottom: 1px solid #F2F2F2;
+    /* border-bottom: 1px solid #F2F2F2; */
     height: 48px;
     padding-top: 10px;
-    width: 99.8%;
+    width: 100%;
     padding-left: 12px;
-    margin-left: 1px;
+    /* margin-left: 1px; */
     background-color: #FFFFFF;
+    margin-bottom: -1px;
 }
 
 .wrap-changes{
   margin-top: 1px !important;
+  border-top: 1px solid #d6d6d6 !important;
+  border: none;
 }
 .control-label-changes-left{
     margin-left: -117px;
@@ -5377,22 +5394,28 @@ color: #686868;
   line-height: 16px;
   color: #333333;
   font-weight: bold;
+  margin-bottom: 16px;
 }
 
 .extraServiceConfigs .col-sm-5 {
   max-width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .extraServiceConfigs .form-group{
   display: inherit;
 }
 .position-relative .table th, .table td{
   text-align: center;
+  border-right: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
 }
 
 .js-formInput button.btn.btn-sm.btn-danger {
   background-color: #FFFFFF;
   color: #686868;
   border-color: #FFFFFF;
+  text-align: left !important;
 }
 .js-formInput button.btn.btn-sm.btn-danger:hover {
   color: #FFFFFF !important;
@@ -5843,3 +5866,34 @@ border: 1px solid #A53159;
   height: 63px !important;
 }
 
+.component-list-item .service-list-container{
+  border-radius: 0px;
+}
+
+a.pull-right.text-decoration.plus-icon{
+  margin-right: 30px !important;
+  margin-top: 0px;
+}
+
+
+
+.form-control:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 0.01rem #9c9c9c;
+}
+
+.form-control {
+  height: 36px;
+}
+
+.table thead th{
+  border-bottom: 1px solid #F2F2F2;
+    border-right: 1px solid #F2F2F2;
+    border-top: 1px solid #F2F2F2;
+    padding-left: 16px;
+    text-align: left !important;
+}
+
+.table{
+  color: #333333 !important;
+}
