@@ -4139,6 +4139,7 @@ color: #333333;
 }
 
 .badge{
+  font-weight: 100;
   padding: 4px 6px;
   font-size: 12px;
   margin-bottom: 2px;
@@ -5896,4 +5897,22 @@ a.pull-right.text-decoration.plus-icon{
 
 .table{
   color: #333333 !important;
+}
+.rphead {
+  font-family: Rakuten Sans UI;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 21px;
+color: #333333;
+
+}
+
+.rpdata {
+  font-family: Rakuten Sans UI;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 21px;
+color: #686868;
 }

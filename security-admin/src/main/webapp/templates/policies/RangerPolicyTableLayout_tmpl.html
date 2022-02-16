@@ -14,9 +14,10 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 --}}
-<div class="wrap">
+<div class="wrap" style="padding: 0px">
     {{#if setNewUi}}
-    <div class="list-header">
+    <div class="list-header" style="padding-top: 15px;
+    padding-right: 15px;">
         {{#if isNotUser}}
             {{#if isNotAuditorOrKMSAuditor}}
                 <button type="button" title="" data-name="deleteService" class=" btn  btn-right rcp-btn">Service Delete</button>
@@ -26,7 +27,7 @@
         {{/if}}
     </div>
     {{/if}}
-<h3 class="wrap-header bold"> {{tt 'lbl.listOfPolicies'}} : {{rangerService.attributes.displayName}} </h3>
+<h3 class="wrap-header bold" style="padding-left: 15px"> {{tt 'lbl.listOfPolicies'}} : {{rangerService.attributes.displayName}} </h3>
 <div data-id="policyTypeTab" class="policyTabs">
     <ul class="nav nav-tabs">
         {{#if isRenderAccessTab}}
@@ -53,7 +54,7 @@
                 <!-- <div class="visual_search"></div> -->
       
                 <!-- <i class="fa-fw fa fa-info-circle searchInfo margin-left-min-30" title="Search Filter Hints" data-id="searchInfo"> </i> -->
-                <div class="align-end">
+        <div class="align-end" style="padding-right: 20px ; padding-bottom: 20px">
        
                     <div class="visual_search"></div>
           
@@ -61,11 +62,25 @@
                     <!-- <i class="fa-fw fa fa-info-circle searchInfo " > </i> -->
                 <div class="clearfix btn-right">
                     {{#if isAddNewPolicyButtonShow}}
-                    <a data-js="addNewPolicy" href="#!/service/{{rangerService.id}}/policies/create/{{this.rangerPolicyType}}" class="btn btn-primary  rcp-btn" type="button">{{tt 'lbl.addNewPolicy'}} </a>
+                    <a style="background-color: #C53E6C;
+                    color: white;" data-js="addNewPolicy" href="#!/service/{{rangerService.id}}/policies/create/{{this.rangerPolicyType}}" class="btn btn-primary  rcp-btn" type="button">{{tt 'lbl.addNewPolicy'}} </a>
                     {{/if}}
              
-            </div>
+                </div>
         </div>
+        <div style="position: absolute;
+        width: 160.89px;
+        height: 18px;
+        left: 367.64px;
+        top: 279px;
+        font-family: Rakuten Sans UI;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;        
+        color: #898989;">Displaying Policies</div>
         <div data-id="r_table"></div>
     </div>
 

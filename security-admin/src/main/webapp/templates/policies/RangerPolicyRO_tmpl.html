@@ -40,37 +40,37 @@
 </div>
 <div id="policyDetails">
     <div class="table-responsive">
-        <table class="table  table-condensed">
+        <table class="table  table-condensed" style="border: 1px solid #F2F2F2">
             <tbody>
                 <tr>
-                    <td class="table-data">
+                    <td class="table-data rphead" style="padding-left: 15px;">
                         {{tt 'lbl.policyType'}}
                     </td>
-                    <td class="table-data">
+                    <td class="table-data rpdata">
                         <div class="controls"><label class="badge badge-ranger" style="cursor: auto;">{{policyType}}</label></div>
                     </td>
                 </tr>
                 <tr>
-                    <td class="table-data">
+                    <td class="table-data rphead">
                         {{tt 'lbl.policyId'}}
                     </td>
-                    <td class="table-data">
+                    <td class="table-data rpdata">
                         <div class="controls"><label class="badge badge-ranger" style="cursor: auto;">{{PolicyDetails.id}}</label></div>
                     </td>
                 </tr>
                 <tr>
-                    <td class="table-data">
+                    <td class="table-data rphead">
                         {{tt 'lbl.version'}}
                     </td>
-                    <td class="table-data">
+                    <td class="table-data rpdata">
                         <div class="controls"><label class="badge badge-ranger" style="cursor: auto;">{{PolicyDetails.version}}</label></div>
                     </td>
                 </tr>
                 <tr>
-                    <td class="table-data">
+                    <td class="table-data rphead" >
                         {{tt 'lbl.policyName'}}
                     </td>
-                    <td class="table-data"> 
+                    <td class="table-data rpdata"> 
                         <span>{{PolicyDetails.name}}</span>
                         <div class="text-right">
                             <span class="badge badge-dark">{{PolicyDetails.policyPriority}}</span>
@@ -79,10 +79,10 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="table-data">
+                    <td class="table-data rphead">
                         {{tt 'lbl.policyLabels'}}
                     </td>
-                    <td class="table-data">
+                    <td class="table-data rpdata">
                         {{#ifCond PolicyDetails.policyLabels.length '==' "0"}}
                             --
                         {{else}}
@@ -97,7 +97,7 @@
                         <td class="table-data">
                             {{this.label}}
                         </td>
-                        <td class="table-data">
+                        <td class="table-data rphead">
                             {{#each this.values}}
                                 <span class="badge badge-info">{{this}}</span>
                             {{/each}}
@@ -107,21 +107,21 @@
                     </tr>
                 {{/each}}
                 <tr>
-                    <td class="table-data">
+                    <td class="table-data rphead">
                         {{tt 'lbl.description'}}
                     </td>
                     {{#ifCond PolicyDetails.description '==' ""}}
-                        <td class="table-data">
+                        <td class="table-data rpdata">
                             --
                         </td>
                     {{else}}
-                        <td class="table-data">
+                        <td class="table-data rpdata">
                             {{PolicyDetails.description}}
                         </td>
                     {{/ifCond}}
                 </tr>
                 <tr>
-                    <td class="table-data">
+                    <td class="table-data rphead">
                         {{tt 'lbl.auditLogging'}}
                     </td>
                     <td class="table-data">
@@ -130,8 +130,8 @@
                 </tr>
                 <tr>
                     {{#if PolicyDetails.zoneName}}
-                        <td class="table-data">{{tt 'lbl.zoneName'}}</td>
-                        <td class="table-data">
+                        <td class="table-data rpdata">{{tt 'lbl.zoneName'}}</td>
+                        <td class="table-data rpdata">
                             {{#if PolicyDetails.zoneName}}
                                 <span class="badge badge-dark">{{PolicyDetails.zoneName}}</span>
                             {{else}}
