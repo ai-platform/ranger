@@ -309,13 +309,14 @@
 			
 			  initialize: function(options) {
 			    Form.editors.Base.prototype.initialize.call(this, options);
-				this.template = _.template('<div class="toggle-xa"><div  class="toggle"></div></div>');			
+				// this.template = _.template('<div class="toggle-xa"><div  class="toggle"></div></div>');			
 			    //this.$el.attr('type', 'checkbox');
 		    	this.switchOn = _.has(this.schema,'switchOn') ?  this.schema.switchOn : false;
 		    	this.onText = _.has(this.schema,'onText') ?  this.schema.onText : 'ON';
 		    	this.offText = _.has(this.schema,'offText') ?  this.schema.offText : 'OFF';
 		    	this.width = _.has(this.schema,'width') ?  this.schema.width : 50;
 		    	this.height = _.has(this.schema,'height') ?  this.schema.height : 20;
+				this.template = _.template('<label class="toggle-control pull-right"><h6 style="margin-left: -99px;">'+this.onText+'</h6><h6 style="margin-top: -27px;margin-left: -2px;">'+this.offText+'</h6><input type="checkbox" value='+this.switchOn+'><span class="control"></span></label>');
 			  },
 			
 			  /**
@@ -323,12 +324,12 @@
 			   */
 			  render: function() {
 			  	this.$el.html( this.template );
-			    this.$el.find('.toggle').toggles({
-			    	on:this.switchOn,
-			    	text : {on : this.onText, off : this.offText },
-			    	width: this.width,
-			    	height: this.height
-			    });
+			    // this.$el.find('.toggle').toggles({
+			    // 	on:this.switchOn,
+			    // 	text : {on : this.onText, off : this.offText },
+			    // 	width: this.width,
+			    // 	height: this.height
+			    // });
 			
 			    return this;
 			  },
