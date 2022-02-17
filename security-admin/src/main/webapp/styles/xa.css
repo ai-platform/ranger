@@ -5435,7 +5435,7 @@ color: #686868;
 }
 .js-formInput button.btn.btn-sm.btn-danger:hover {
   background-color: transparent;
-  border: none;
+  border: 1px solid #FFFFFF !important;
 }
 .extraServiceConfigs .offset-sm-3 {
   margin-left: 0% !important;
@@ -5443,7 +5443,7 @@ color: #686868;
 
 .offset-sm-3 button.btn.btn-sm {
   display: flex;
-  width: 97px;
+  width: 98px;
   height: 28px;
   border: none;
 }
@@ -5833,7 +5833,7 @@ border: 1px solid #A53159;
 }
 
 .field-tagService .select2-container {
-  width: 151% !important;
+  width: 155.5% !important;
 }
 
 .header-menu a.user-dropdown {
@@ -6001,4 +6001,9 @@ input[type="radio"] {
 
 .js-formInput input.form-control {
   height: 28px;
+}
+
+.form-changes button.btn.btn-danger.btn-sm {
+  width: 125px;
+  height: 36px;
 }
