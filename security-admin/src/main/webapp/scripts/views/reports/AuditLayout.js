@@ -224,7 +224,7 @@ define(function(require) {
 					<th class="renderable ruser"></th>\
 					<th class="renderable ruser"></th>\
 					<th class="renderable ruser"></th>\
-                                        <th class="renderable ruser"></th>\
+                    <th class="renderable ruser"></th>\
 					<th class="renderable ruser"></th>\
 					<th class="renderable cip" colspan="3">Policy ( Time )<i class="fa-fw fa fa-info-circle m-l-sm" data-id ="policyTimeDetails"></th>\
                     <th class="renderable cip" colspan="3">Tag ( Time )<i class="fa-fw fa fa-info-circle m-l-sm" data-id ="tagPolicyTimeDetails"></th>\
