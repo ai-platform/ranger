@@ -309,13 +309,14 @@
 			
 			  initialize: function(options) {
 			    Form.editors.Base.prototype.initialize.call(this, options);
-				this.template = _.template('<div class="toggle-xa"><div  class="toggle"></div></div>');			
+				// this.template = _.template('<div class="toggle-xa"><div  class="toggle"></div></div>');			
 			    //this.$el.attr('type', 'checkbox');
 		    	this.switchOn = _.has(this.schema,'switchOn') ?  this.schema.switchOn : false;
 		    	this.onText = _.has(this.schema,'onText') ?  this.schema.onText : 'ON';
 		    	this.offText = _.has(this.schema,'offText') ?  this.schema.offText : 'OFF';
 		    	this.width = _.has(this.schema,'width') ?  this.schema.width : 50;
 		    	this.height = _.has(this.schema,'height') ?  this.schema.height : 20;
+				this.template = _.template('<label class="toggle-control pull-right"><h6 class="first_label" style="margin-left: -108px;">'+this.onText+'</h6><h6 style="margin-top: -27px;margin-left: -3px;">'+this.offText+'</h6><input class="rcpCheckbox" type="checkbox" checked='+this.switchOn+'><span class="control"></span></label>');
 			  },
 			
 			  /**
@@ -323,23 +324,25 @@
 			   */
 			  render: function() {
 			  	this.$el.html( this.template );
-			    this.$el.find('.toggle').toggles({
-			    	on:this.switchOn,
-			    	text : {on : this.onText, off : this.offText },
-			    	width: this.width,
-			    	height: this.height
-			    });
+			    // this.$el.find('.toggle').toggles({
+			    // 	on:this.switchOn,
+			    // 	text : {on : this.onText, off : this.offText },
+			    // 	width: this.width,
+			    // 	height: this.height
+			    // });
 			
 			    return this;
 			  },
 			
 			  getValue: function() {
-				  return this.$el.find('.toggle-slide').hasClass('active')? true:  false;
+				//   return this.$el.find('.toggle-slide').hasClass('active')? true:  false;
+				  return this.$el.find('.rcpCheckbox')[0].checked;
 				  //return this.$el.find('.active').text() == "ON" ? true : false;
 			  },
 			
 			  setValue: function(switchOn) {
-				  this.$el.find('.toggle').toggles({on:switchOn,text : {on : this.onText, off : this.offText }});
+				this.$el.find('.rcpCheckbox')[0].checked=switchOn;
+				//   this.$el.find('.toggle').toggles({on:switchOn,text : {on : this.onText, off : this.offText }});
 				  /*if(switchOn){
 					  this.$el.find('.active').removeClass('active');
 					  this.$el.find('.toggle-on').addClass('active');

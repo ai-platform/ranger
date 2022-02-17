@@ -50,7 +50,7 @@
                             </div> -->
                         {{/if}}
                         <label class="toggle-control pull-right">
-                        <h6 style="margin-left: -99px;">Expand</h6>
+                        <h6 style="margin-left: -103px;">Expand</h6>
                         <h6 style="margin-top: -27px;margin-left: -2px;">Collapse</h6>
                             <input type="checkbox" data-id="collapesAll">
                             <span class="control"></span>
@@ -67,11 +67,19 @@
                                         {{#if ../operation}}
                                             {{#if ../isServiceManager}}
                                                 <span class="components-header">
-                                                    <a href="#!/service/{{./this.id}}/create" class="pull-right text-decoration plus-icon" title="Add New Service" style="margin-right: 2px;"> <i class="fa-fw fa fa-plus"></i></a>
+                                                    <a href="#!/service/{{./this.id}}/create" class="pull-right text-decoration plus-icon" title="Add New Service" style="margin-right: 2px;"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg " style="fill: #FFFFFF;">
+                                                        <rect x="0.5" y="0.5" width="23" height="23" rx="3.5" fill="white"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18 11.5H12.5V6H11.5V11.5H6V12.5H11.5V18H12.5V12.5H18V11.5Z" fill="#A53159"/>
+                                                        <rect x="0.5" y="0.5" width="23" height="23" rx="3.5" stroke="#F2F2F2" style="stroke: transparent;"/>
+                                                        </svg></a>
                                                 </span>
                                             {{else}}
                                                 <span class="components-header">
-                                                    <a href="javascript:void(0)" class="pull-right text-decoration disabled add-service" title="Services cannot be added while filtering Security Zones" style="margin-right: 2px;"> <i class="fa-fw fa fa-plus"></i></a>
+                                                    <a href="javascript:void(0)" class="pull-right text-decoration disabled add-service" title="Services cannot be added while filtering Security Zones" style="margin-right: 2px;"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="fill: #FFFFFF;">
+                                                        <rect x="0.5" y="0.5" width="23" height="23" rx="3.5" fill="white"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18 11.5H12.5V6H11.5V11.5H6V12.5H11.5V18H12.5V12.5H18V11.5Z" fill="#A53159"/>
+                                                        <rect x="0.5" y="0.5" width="23" height="23" rx="3.5" stroke="#F2F2F2" style="stroke: transparent;"/>
+                                                        </svg></a>
                                                 </span>
                                             {{/if}}
                                         {{/if}}

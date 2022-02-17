@@ -97,7 +97,9 @@ define(function(require){
 					title		: localization.tt("lbl.auditLogging"),
 					onText 		: 'Yes',
 					offText		: 'No',
-					switchOn	: true
+					switchOn	: true,
+					editorClass : 'policy-audit-enable',
+					width		: '80'
 				},
 				//recursive(ON/OFF) toggle
 				recursive : {

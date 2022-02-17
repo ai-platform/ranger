@@ -27,12 +27,16 @@
         {{/if}}
     </div>
     {{/if}}
-<h3 class="wrap-header bold" style="padding-left: 15px; padding-bottom: 30px; border-bottom: 1px solid #F2F2F2;"> {{tt 'lbl.listOfPolicies'}} : {{rangerService.attributes.displayName}} </h3>
+<h3 class="wrap-header bold" style="padding-left: 15px; padding-bottom: 36px; border-bottom: 1px solid #F2F2F2;font-family: Rakuten Sans UI;
+font-style: normal;
+font-weight: bold;
+font-size: 21px;
+color: #333333;"> {{tt 'lbl.listOfPolicies'}} : {{rangerService.attributes.displayName}} </h3>
 <div data-id="policyTypeTab" class="policyTabs">
     <ul class="nav nav-tabs">
         {{#if isRenderAccessTab}}
             <li data-tab="access" class="nav-item active">
-                <a class="nav-link" data-toggle="tab" href="#access">Access</a>
+                <a style="margin-left: 0px;" class="nav-link" data-toggle="tab" href="#access">Access</a>
             </li>
         {{/if}}
         {{#showMaskingTab .}}
@@ -60,7 +64,7 @@
           
                     <span title="Search Filter Hints"  class='searchInfoIcon' data-id="searchInfo"><img src="images/hintButton.png" height="34px" width="34px" style="margin-bottom: 31px"></span>
                     <!-- <i class="fa-fw fa fa-info-circle searchInfo " > </i> -->
-                <div class="clearfix btn-right">
+                <div class="clearfix btn-right" style="margin-left: 24px;">
                     {{#if isAddNewPolicyButtonShow}}
                     <a style="background-color: #C53E6C;
                     color: white;" data-js="addNewPolicy" href="#!/service/{{rangerService.id}}/policies/create/{{this.rangerPolicyType}}" class="btn btn-primary  rcp-btn" type="button"><img src="images/plus.png" height="15px" width="15px" style="margin-bottom: 2px;"> {{tt 'lbl.addNewPolicy'}} </a>
@@ -68,7 +72,7 @@
              
                 </div>
         </div>
-        <div style="position: absolute;
+        <!-- <div style="position: absolute;
         width: 160.89px;
         height: 18px;
         left: 373.64px;
@@ -80,8 +84,8 @@
         line-height: 18px;
         display: flex;
         align-items: center;        
-        color: #898989;">Displaying 1 of 1 Policy</div>
-        <div data-id="r_table" style="    border: 1px solid #F2F2F2;"></div>
+        color: #898989;">Displaying 1 of 1 Policy</div>-->
+        <div data-id="r_table"></div>
     </div>
 
 </div>
