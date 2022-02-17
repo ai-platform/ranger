@@ -1082,7 +1082,7 @@ ul.tagit input[type="text"] {
 }
 
 .m-top-10 {
-  margin-top: 10px;
+  margin-top: 18px;
 }
 
 .m-top-5 {
@@ -3251,6 +3251,7 @@ a.serviceNameEllipsis.active {
 .list-data {
     overflow-y: auto;
     overflow-x: hidden;
+    margin-top: 32px;
 }
 
 .fa-caret-up.fa-caret-down:before{
@@ -4319,12 +4320,13 @@ button.btn.btn-secondary.dropdown-toggle {
 }
 
 .ranger-policy .form-group.field-policyPriority .policy-priority{
-    margin-left: 45vw;
-    margin-top: -80px;
-    width: 100px
+  margin-left: 56vw;
+  margin-top: -70px;
+  width: 100px;
 }
 .expanded-contant .form-group.field-policyPriority .policy-priority {
-  margin-left: 37vw;
+  margin-left: 43vw;
+  margin-top: -70px;
 }
 
 .field-path .form-control.rosource-boder
@@ -5166,18 +5168,21 @@ color: #686868;
 .wrap-header-changes{
     /* border-bottom: 1px solid #F2F2F2; */
     height: 48px;
-    padding-top: 10px;
+    padding-top: 16px;
     width: 100%;
-    padding-left: 12px;
+    padding-left: 16px;
     /* margin-left: 1px; */
     background-color: #FFFFFF;
     margin-bottom: -1px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: #333333;
 }
 
 .wrap-changes{
   margin-top: 1px !important;
-  border-top: 1px solid #d6d6d6 !important;
-  border: none;
+  border-top: 1px solid #F2F2F2 !important;
+  border-radius: 0px;
 }
 .control-label-changes-left{
     margin-left: -117px;
@@ -5219,7 +5224,7 @@ color: #686868;
 .form-group.field-displayName {
   float: right;
   display: inherit;
-  margin-top: -90px;
+  margin-top: -91.5px;
   width: 52%;
   /* margin-right: 13px; */
 }
@@ -5237,11 +5242,13 @@ color: #686868;
 }
 .field-name > .col-sm-4 {
     max-width: 100%;
-    width: 49%;
+    width: 50.3%;
 }
 
 .form-group.field-description {
   display: inherit;
+  margin-top: -14px !important;
+  margin-bottom: -14px;
 }
 
 .field-description > label.col-sm-3.control-label {
@@ -5251,7 +5258,7 @@ color: #686868;
   top: 0px;
 }
 .field-description .col-sm-4 {
-  max-width: 49%;
+  max-width: 50.3%;
 }
 .field-description textarea.form-control {
   height: 36px;
@@ -5260,13 +5267,16 @@ color: #686868;
 .form-group.field-isEnabled {
   display: flow-root;
     float: left;
-    margin-top: -80px;
+    margin-top: -73px;
     margin-left: 50%;
 }
 
 .field-isEnabled > label.col-sm-3.control-label{
-  max-width: 140px;
+  max-width: 147px;
   left: -30px;
+  font-weight: bold;
+  color: #333333;
+  font-size: 14px;
 }
 
 .field-isEnabled label.form-check-label {
@@ -5310,7 +5320,7 @@ color: #686868;
   display: none;
 }
 .field-tagService div#s2id_c42_tagService {
-  width: 150% !important;
+  width: 155% !important;
 }
 
 .select2-container-active .select2-choice{
@@ -5342,8 +5352,8 @@ color: #686868;
 }
 
 .field-username .col-sm-4 {
-  width: 49%;
-  max-width: 49%;
+  width: 50.3%;
+  max-width: 50.3%;
 }
 
 .form-group.field-password {
@@ -5365,6 +5375,7 @@ color: #686868;
 }
 .form-group.field-atlas\.rest\.address {
   display: inherit;
+  margin-top: -12px;
 }
 .field-atlas\.rest\.address > label.col-sm-3.control-label {
   text-align: left;
@@ -5372,8 +5383,8 @@ color: #686868;
 }
 
 .field-atlas\.rest\.address .col-sm-4{
-  width: 49%;
-  max-width: 49%;
+  width: 50.3%;
+  max-width: 50.3%;
 }
 
 .form-group.field-commonNameForCertificate {
@@ -5423,8 +5434,8 @@ color: #686868;
   text-align: left !important;
 }
 .js-formInput button.btn.btn-sm.btn-danger:hover {
-  color: #FFFFFF !important;
-  background-color: #C53E6C !important;
+  background-color: transparent;
+  border: none;
 }
 .extraServiceConfigs .offset-sm-3 {
   margin-left: 0% !important;
@@ -5584,8 +5595,8 @@ color: #686868;
 }
 
 .policy-form .form-group.field-isAuditEnabled {
-  margin-left: 57%;
-  margin-top: -80px;
+  margin-left: 52%;
+  margin-top: -88px;
   width: 65%;
   display: flow-root;
 }
@@ -5669,7 +5680,7 @@ a.editable.editable-click.editable-empty {
 }
 
 .form-actions button:nth-child(n) {
-  margin-left: -118px !important;
+  /* margin-left: -118px !important; */
 }
 
 table.table.condition-group-table {
@@ -5689,8 +5700,8 @@ table.table.condition-group-table {
 }
 
 .field-passwordConfirm .col-sm-4 {
-  width: 49%;
-  max-width: 49%;
+  width: 50.3%;
+  max-width: 50.3%;
 }
 
 .form-group.field-firstName{
@@ -5738,8 +5749,8 @@ table.table.condition-group-table {
   top: 0px;
 }
 .field-emailAddress .col-sm-4{
-  width: 49%;
-  max-width: 49%;
+  width: 50.3%;
+  max-width: 50.3%;
 }
 
 .form-group.field-userRoleList {
@@ -5785,9 +5796,9 @@ h3.wrap-header.bold.search-header {
 
 
 .ranger-policy .form-group.field-isEnabled .policy-enable-disable {
-  margin-left: 1vw;
-  margin-top: 1px;
-  width: 100px;
+  margin-left: 4vw;
+    margin-top: 2.5px;
+    width: 100px;
 }
 
 .align-end{
@@ -5897,6 +5908,8 @@ a.pull-right.text-decoration.plus-icon{
     border-top: 1px solid #F2F2F2;
     padding-left: 16px;
     text-align: left !important;
+    vertical-align: inherit;
+    height: 40px;
 }
 
 .table{
@@ -5946,4 +5959,46 @@ td.html-cell.renderable {
 }
 td.string-cell.renderable.name {
   color: #686868;
+}
+
+.list-data::-webkit-scrollbar {
+  display: none;
+}
+
+.policy-audit-enable h6.first_label {
+  margin-left: -77px !important;
+}
+
+/* .components-header:hover svg {
+  fill: none;
+} */
+
+.component-list-item.m-b-md.components-header:hover svg{
+  fill:none !important;
+}
+
+input[type="radio"] {
+  -webkit-transform: scale(1.54);
+}
+
+.form-changes button.btn.btn-primary.btn-sm {
+  background: #C53E6C;
+  border-radius: 4px;
+  color: #ffffff;
+  height: 36px;
+  width: 125px;
+}
+
+.form-changes button.btn.btn-inverse.btn-sm {
+  width: 125px;
+  height: 36px;
+}
+
+.offset-sm-3 button.btn.btn-sm:hover {
+  background: transparent;
+  color: #C53E6C;
+}
+
+.js-formInput input.form-control {
+  height: 28px;
 }
