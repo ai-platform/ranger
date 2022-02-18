@@ -675,6 +675,8 @@ table.backgrid thead th, table.backgrid thead td {
 table.backgrid thead th {
   background: transparent;
   text-align: left;
+  height: 40px;
+  vertical-align: inherit;
 }
 
 table.backgrid thead {
@@ -3918,6 +3920,7 @@ a:focus,a:hover,a.active,a:active{
 
 .backgrid{
   font-size: 14px;
+  border: 1px solid #F2F2F2;
 }
 
 .form-horizontal .form-group{
@@ -5812,8 +5815,6 @@ h3.wrap-header.bold.search-header {
 
 
 .searchInfoIcon svg{
-
-    border: 1px solid #9C9C9C;
     border-radius: 4px;
     margin-bottom: 31px;
 }
