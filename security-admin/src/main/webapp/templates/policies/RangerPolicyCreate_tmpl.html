@@ -15,7 +15,7 @@
   limitations under the License.
 --}}
 {{#if editPolicy}}
-<h4> {{tt 'h.editPolicy'}}</h4>
+<h4 class="wrap-header-changes">  {{tt 'h.editPolicy'}}</h4>
 {{else}}
 <!-- <h4> {{tt 'h.createPolicy'}} </h4> -->
 <h4 class="wrap-header-changes">Policy Details</h4>
@@ -35,7 +35,7 @@
     </div>
     <div data-id="r_form"></div>
     <div class="form-actions row">
-        <div class="col-md-9 offset-md-3">
+        <div class="col-md-9 offset-md-3 pull-left">
             {{#if editPolicy}}
             <button type="submit" data-id="save" class="btn btn-primary btn-sm">
                 <span>Save</span>

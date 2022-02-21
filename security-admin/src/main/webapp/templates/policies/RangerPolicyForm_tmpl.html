@@ -42,7 +42,10 @@ language governing permissions and limitations under the License. --}}
 						<table class="table  condition-group-table">
 							<thead>
 								<tr>
-									<th colspan="2">Policy Conditions <a href="javascript:void(0);" data-js="customPolicyConditions" class="btn btn-sm pull-right" title="set conditions for policy"><i class='{{policyConditionIconClass}}' data-id="policyCondIcon"></i></a></th>
+									<th colspan="2">Policy Conditions <a href="javascript:void(0);" data-js="customPolicyConditions" class=" btn-sm pull-right" title="set conditions for policy"><svg data-id="policyCondIcon" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M14 7.79498H8.5V2.29498H7.5V7.79498H2V8.79498H7.5V14.295H8.5V8.79498H14V7.79498Z" fill="#C53E6C"/>
+										</svg>
+										</a></th>
 								</tr>
 							</thead>
 							<tbody data-id="conditionData">
@@ -54,7 +57,7 @@ language governing permissions and limitations under the License. --}}
 									</tr>
 									{{/each}}
 								{{else}}
-									<tr><td><center> No Conditions </center></td></tr>
+									<tr><td style="border: none;"><center> No Conditions </center></td></tr>
 								{{/if}}
 							</tbody>
 						</table>
