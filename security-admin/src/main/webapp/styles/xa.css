@@ -5632,26 +5632,38 @@ div#s2id_autogen11, div#s2id_autogen7, div#s2id_autogen9 {
   width: 124px;
   margin-left: 12px;
   border: none;
+  font-family: Rakuten Sans UI;
+  font-size: 14px;
+  line-height: 24px;
+  color: #C53E6C;
+  font-weight: 300;
+  font-style: normal;
 }
 
 button.btn.btn-sm.add-conditions {
-    margin-right: 111px;
-    margin-top: -23px;
+    margin-right: 93px;
+    margin-top: -27.5px;
     display: block !important;
     border: none;
-    margin-left: -10px;
+    margin-left: -2px;
 }
 
 button.btn.btn-sm.add-permissions {
-  margin-right: 120px;
-  margin-top: -23px;
+  margin-right: 121px;
+  margin-top: -27px;
   display: block !important;
   border: none;
 }
 
 a.editable.editable-click.editable-empty {
-  width: 96px;
+  width: 104px;
   border: none;
+  font-family: Rakuten Sans UI;
+    font-size: 14px;
+    line-height: 24px;
+    color: #C53E6C;
+    font-weight: 300;
+    font-style: normal;
 }
 .form-indent-right .wrap-header.search-header {
   background-color: white;
@@ -6064,4 +6076,18 @@ div#s2id_autogen7{
 
 .policy-form .field-description textarea.form-control {
   width: 353px;
+}
+
+button.btn.btn-sm.add-conditions:hover {
+  background: transparent;
+}
+
+button.btn.btn-sm.add-conditions:focus {
+  box-shadow: none;
+}
+button.btn.btn-sm.add-permissions:hover{
+  background: transparent;
+}
+button.btn.btn-sm.add-permissions:focus{
+  box-shadow: none;
 }
