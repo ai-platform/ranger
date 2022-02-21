@@ -25,29 +25,42 @@
 </td>
 {{#if policyConditions}}
 <td>	
-        <a href="javascript:;" id="policyConditions" data-type="policyConditions" data-original-title="Policy Conditions" title="add/edit conditions"></a>
-	<button type="button" class="btn btn-sm add-conditions" title="Add" style="display: inline-block;"><i class="fa-fw fa fa-plus"></i>
-	</button>
+        <a href="javascript:;" id="policyConditions" data-type="policyConditions" data-original-title="Policy Conditions" title="add/edit conditions"><span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="
+                margin-bottom: 4px;
+                margin-right: 2px;
+            ">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 7.5H8.5V2H7.5V7.5H2V8.5H7.5V14H8.5V8.5H14V7.5Z" fill="#C53E6C"></path>
+            </svg></span></a>
 </td>
 {{/if}}
 <td>	
-        <a href="javascript:;" data-js="permissions" data-type="checklist" data-title="Select permissions" title="add/edit permissions" ></a>
-	<button type="button" class="btn btn-sm add-permissions" title="Add" style="display: inline-block;"><i class="fa-fw fa fa-plus"></i>
-	</button>
+        <a href="javascript:;" data-js="permissions" data-type="checklist" data-title="Select permissions" title="add/edit permissions" ><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="
+                margin-bottom: 4px;
+                margin-right: 2px;
+            ">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 7.5H8.5V2H7.5V7.5H2V8.5H7.5V14H8.5V8.5H14V7.5Z" fill="#C53E6C"></path>
+            </svg></a>
 </td>
 {{#if isMaskingPolicy}}
 <td>	
         <a href="javascript:;" data-js="maskingType" data-type="radiolist" data-title="Select Masking Option" title="Select Masking Option" >Add Mask Type</a>
-	<button type="button" class="btn btn-sm add-masking-type" title="Add" style="display: inline-block;"><i class="fa-fw fa fa-plus"></i>
-	</button>
+	<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="
+    margin-bottom: 4px;
+    margin-right: 2px;
+">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14 7.5H8.5V2H7.5V7.5H2V8.5H7.5V14H8.5V8.5H14V7.5Z" fill="#C53E6C"></path>
+</svg>
 	<input type="text" data-id="maskTypeCustom" value="{{dataMaskInfo.valueExpr}}" placeholder="enter masked value or expression" style="display:none;" width="40%"/>
 </td>	
 {{/if}}
 {{#if isRowFilterPolicy}}
 <td>	
-        <a href="javascript:;" data-js="rowLeveFilter" data-type="text" data-title="Enter row filter expression" title="Enter filter expression" ></a>
-	<button type="button" class="btn btn-sm add-row-filter" title="Add" style="display: inline-block;"><i class="fa-fw fa fa-plus"></i>
-	</button>
+        <a href="javascript:;" data-js="rowLeveFilter" data-type="text" data-title="Enter row filter expression" title="Enter filter expression" ><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="
+                margin-bottom: 4px;
+                margin-right: 2px;
+            ">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 7.5H8.5V2H7.5V7.5H2V8.5H7.5V14H8.5V8.5H14V7.5Z" fill="#C53E6C"></path>
+            </svg></a>
 </td>	
 {{/if}}
 {{#if isAccessPolicy}}
@@ -57,6 +70,8 @@
 {{/if}}
 <td>
 	<button type="button" class="btn btn-sm btn-danger " data-action="delete">
-		<i class="fa-fw fa fa-remove"></i>
+		<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.875 4.03325L15.9669 3.12512L10 9.092L4.03313 3.12512L3.125 4.03325L9.09188 10.0001L3.125 15.967L4.03313 16.8751L10 10.9082L15.9669 16.8751L16.875 15.967L10.9081 10.0001L16.875 4.03325Z" fill="#9C9C9C"/>
+                        </svg>                        
 	</button>
 </td>
