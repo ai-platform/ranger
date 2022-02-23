@@ -276,7 +276,7 @@ define(function(require){
 				// If next element is a wrap and hasn't .non-collapsible class
 				if (wrap.hasClass('wrap') && ! wrap.hasClass('non-collapsible')){
 					$(this).append('<a href="#" class="wrap-expand pull-right" style="display: none">show&nbsp;&nbsp;<i class="fa-fw fa fa-caret-down"></i></a>')
-						   .append('<a href="#" class="wrap-collapse pull-right" >hide&nbsp;&nbsp;<i class="fa-fw fa fa-caret-up"></i></a>');
+						   .append('<a href="#" class="wrap-collapse pull-right" ><svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M0.00390589 8.62061L0.887656 9.50436L8.12891 2.26311L15.3702 9.50436L16.2539 8.62061L8.12891 0.495605L0.00390589 8.62061Z" fill="#686868"/> </svg> </a>');
 				}
 			});
 			// Collapse wrap

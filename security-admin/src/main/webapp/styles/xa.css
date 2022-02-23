@@ -6067,3 +6067,16 @@ div#s2id_autogen7{
 .policy-form .field-description textarea.form-control {
   width: 335.48px;
 }
+
+.custom-delete-popup .modal-content {
+  width: 452px;
+  height: 426px;
+}
+
+.custom-delete-popup .modal-footer {
+  display: flex;
+  flex-direction: column;
+  height: 160px;
+  justify-content: space-around;
+}
+
