@@ -441,7 +441,7 @@ define(function(require) {
                 var obj = this.collection.get($(e.currentTarget).data('id'));
                 var model = new RangerPolicy(obj.attributes);
                 model.collection = this.collection;
-                XAUtil.confirmPopup({
+                XAUtil.deleteDialog({
                     //msg :localize.tt('msg.confirmDelete'),
                     msg: 'Are you sure want to delete ?',
                     callback: function() {
@@ -680,7 +680,7 @@ define(function(require) {
                 var that = this;
                 var model = this.rangerService;
                 if (model) {
-                    XAUtil.confirmPopup({
+                    XAUtil.deleteDialog({
                         msg: 'Are you sure want to delete ?',
                         callback: function() {
                             XAUtil.blockUI();
