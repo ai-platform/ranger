@@ -444,6 +444,7 @@ define(function(require) {
                 XAUtil.deleteDialog({
                     //msg :localize.tt('msg.confirmDelete'),
                     msg: 'Are you sure want to delete ?',
+                    msg2: 'all-entity-type, entity classification',
                     callback: function() {
                         XAUtil.blockUI();
                         model.destroy({
@@ -682,6 +683,7 @@ define(function(require) {
                 if (model) {
                     XAUtil.deleteDialog({
                         msg: 'Are you sure want to delete ?',
+                        msg2: 'all-entity-type, entity classification',
                         callback: function() {
                             XAUtil.blockUI();
                             model.destroy({
