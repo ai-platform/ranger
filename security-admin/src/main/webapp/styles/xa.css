@@ -1202,7 +1202,7 @@ ul.tabs > li > a {
 }
 .formHeader {
   padding: 2px 4px;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: bold;
   line-height: 26px;
   color: #333;
@@ -5171,10 +5171,10 @@ color: #686868;
     /* HK Falguni Changes */
 .wrap-header-changes{
     /* border-bottom: 1px solid #F2F2F2; */
-    height: 48px;
+    height: 61px;
     padding-top: 16px;
     width: 100%;
-    padding-left: 16px;
+    padding-left: 13px;
     /* margin-left: 1px; */
     background-color: #FFFFFF;
     margin-bottom: -1px;
@@ -5578,7 +5578,7 @@ color: #686868;
 }
 
 .col-md-4 a.btn.btn-primary.pull-right.m-b-md.btn-sm {
-  margin-right: 159%;
+  margin-right: 166%;
   width: 152px;
 }
 
@@ -5593,14 +5593,16 @@ color: #686868;
 
 .policy-form .form-group.field-policyLabels {
   margin-bottom: 40px;
-  margin-left: 104%;
+  margin-left: 98%;
   margin-top: -90px;
   width: 58%;
   display: block;
+  position: absolute;
+    z-index: 1 !important;
 }
 
 .policy-form .form-group.field-isAuditEnabled {
-  margin-left: 54%;
+  margin-left: 50%;
   margin-top: -88px;
   width: 65%;
   display: flow-root;
@@ -5617,7 +5619,7 @@ color: #686868;
 .form-group.field-tag {
   max-width: 175%;
   width: 152%;
-  margin-top: -18px;
+  /* margin-top: -18px; */
 }
 
 .table-permission thead{
@@ -6041,7 +6043,7 @@ div#s2id_autogen7{
   width: 100% !important;
 }
 .tag .select2-choices{
-  width: 353px;
+  width: 335.48px;
 }
 
 .offset-md-3 button.btn.btn-inverse.btn-sm {
@@ -6075,7 +6077,19 @@ div#s2id_autogen7{
 }
 
 .policy-form .field-description textarea.form-control {
-  width: 353px;
+  width: 335.48px;
+}
+
+.custom-delete-popup .modal-content {
+  width: 452px;
+  height: 426px;
+}
+
+.custom-delete-popup .modal-footer {
+  display: flex;
+  flex-direction: column;
+  height: 160px;
+  justify-content: space-around;
 }
 
 button.btn.btn-sm.add-conditions:hover {

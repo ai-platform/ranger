@@ -422,6 +422,35 @@ define(function(require) {
 		});
 	};
 
+	XAUtils.deleteDialog = function(params) {
+		bootbox.hideAll();
+		var modal = bootbox.dialog({
+			message: '<div style=" display: flex; flex: 1; height: 246px; width: 418px; padding-top: 60px; align-items: center; flex-direction: column;"> <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M23.9999 3.59998C26.4144 3.59998 28.3713 5.55692 28.3713 7.9714H41.4856V10.8857H6.51416V7.9714H19.6284C19.6284 5.55692 21.5854 3.59998 23.9999 3.59998Z" fill="#686868"></path> <path d="M35.657 41.4857H12.3427V13.8H9.42845V41.4857C9.42845 43.0944 10.734 44.4 12.3427 44.4H35.657C37.2657 44.4 38.5713 43.0944 38.5713 41.4857V13.8H35.657V41.4857Z" fill="#686868"></path> <path d="M16.7142 38.5714H19.6284V16.7143H16.7142V38.5714Z" fill="#686868"></path> <path d="M31.2856 38.5714H28.3713V16.7143H31.2856V38.5714Z" fill="#686868"></path> <path d="M22.5427 38.5714H25.457V16.7143H22.5427V38.5714Z" fill="#686868"></path> </svg> <div style="padding-top: 40px">'+ params.msg + '</div> <div style="padding-top: 10px">'+ params.msg + '</div> </div>',
+			className: "custom-delete-popup",
+			buttons: [
+			  {
+				label: "Delete",
+				className: "btn btn-primary",
+				callback: function() {
+	
+					params.callback();
+				 
+				  return true;
+				}
+			  },
+					 ],
+			show: false,
+		  
+		});
+		modal.find('.modal-footer button').before( "<div>This action cannot be undone.</div>" );
+		modal.modal("show");
+		// bootbox.confirm(params.msg, function(result) {
+		// 	if (result) {
+		// 		params.callback();
+		// 	}
+		// });
+	};
+
 	XAUtils.filterResultByIds = function(results, selectedVals) {
 		return _.filter(results, function(obj) {
 			if ($.inArray(obj.id, selectedVals) < 0)
