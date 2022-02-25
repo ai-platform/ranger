@@ -6178,3 +6178,8 @@ font-size: 13px;
   font-family: Rakuten Sans;
 font-size: 13px;
 }
+
+.form-group .col-md-12 .btn :hover {
+  background-color: white;
+  color: #C53E6C;
+}

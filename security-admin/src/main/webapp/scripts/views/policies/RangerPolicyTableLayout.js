@@ -401,7 +401,8 @@ define(function(require){
 			model.collection = this.collection;
 			XAUtil.deleteDialog({
 				//msg :localize.tt('msg.confirmDelete'),
-				msg :'Are you sure want to delete ?',
+				msg :'Are you sure want to delete this Policy ?',
+				msg2: 'all-entity-type, entity classification',
 				callback : function(){
 					XAUtil.blockUI();
 					model.destroy({
