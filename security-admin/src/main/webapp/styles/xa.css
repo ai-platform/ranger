@@ -3301,7 +3301,7 @@ ul.zone-listing-new > li {
 }
 ul.zone-listing-new > li:hover {
   color: #FFFFFF !important;
-  background-color: #A53159;
+  background-color: #FFE8E8;
   border-radius: 4px;
 }
 
@@ -3324,6 +3324,7 @@ ul.zone-listing-new > li:hover {
   background-color: #FFFFFF;
   border-radius: 4px;
   color: #C53E6C;
+  height: 44px;
 }
 ul.zone-listing-new > li > a {
 
@@ -3333,6 +3334,7 @@ font-style: normal;
 font-weight: normal;
 font-size: 14px;
 line-height: 20px;
+padding-top: 2px;
 /* identical to box height, or 143% */
 
 /* Gray/600 */
@@ -3345,8 +3347,8 @@ li.selected:hover {
 }
 
 ul.zone-listing-new > li > a:hover {
-  color: #FFFFFF !important;
-  background-color: #A53159;
+  /* color: #FFFFFF !important;
+  background-color: #A53159; */
 }
 
 li.selected a{
@@ -6104,4 +6106,75 @@ button.btn.btn-sm.add-permissions:hover{
 }
 button.btn.btn-sm.add-permissions:focus{
   box-shadow: none;
+}
+ul.zone-listing-new > li:hover > a {
+  color: #8C0000 !important;
+}
+.zone-listing-new > li > a:hover, .zone-listing-new > li > a{
+  font-size: 14px;
+}
+
+.VS-search-box-wrapper.VS-search-box {
+  height: 38px !important;
+}
+
+.wrap.non-collapsible {
+  padding: 16px;
+}
+
+.exec-services{
+  margin-left: 49%;
+    /* margin-top: 0px; */
+    padding-top: 0px;
+    top: 32px;
+}
+
+.text-right-update{
+  border: none;
+  text-align: right;
+}
+
+.entries-update{
+  float: left;
+  margin-top: 8px;
+  color: #686868;
+  font-family: Rakuten Sans;
+font-size: 13px;
+}
+
+.last-time-update{
+  margin-left: 95%;
+  /* margin-bottom: -8px; */
+  position: absolute;
+  /* right: 20px; */
+  /* bottom: 17px; */
+  width: 114px;
+  top: 13px;
+}
+
+.label-date-update{
+  position: absolute;
+  border: none;
+  color: #686868;
+  font-family: Rakuten Sans;
+font-size: 13px;
+}
+
+.refresh-btn-update{
+  margin-top: 5px;
+    left: 48%;
+    float: right;
+    /* right: 28px; */
+    position: relative;
+    border: none;
+}
+.refresh-btn-update:focus{
+  border: none;
+}
+
+.badge-update{
+  border: none;
+  color: #686868;
+  font-family: Rakuten Sans;
+font-size: 13px;
 }
