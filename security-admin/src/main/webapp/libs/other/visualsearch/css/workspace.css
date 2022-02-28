@@ -7,6 +7,11 @@
   color: #373737;
   font-size: 12px;
 }
+.row .VS-search {
+  width: 100%;
+  position: absolute;
+  margin-top: -16px;
+}
 .VS-search input {
   display: block;
   border: none;

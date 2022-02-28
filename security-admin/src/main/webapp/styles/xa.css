@@ -3304,7 +3304,7 @@ ul.zone-listing-new > li {
 }
 ul.zone-listing-new > li:hover {
   color: #FFFFFF !important;
-  background-color: #A53159;
+  background-color: #FFE8E8;
   border-radius: 4px;
 }
 
@@ -3327,6 +3327,7 @@ ul.zone-listing-new > li:hover {
   background-color: #FFFFFF;
   border-radius: 4px;
   color: #C53E6C;
+  height: 44px;
 }
 ul.zone-listing-new > li > a {
 
@@ -3336,6 +3337,7 @@ font-style: normal;
 font-weight: normal;
 font-size: 14px;
 line-height: 20px;
+padding-top: 2px;
 /* identical to box height, or 143% */
 
 /* Gray/600 */
@@ -3348,8 +3350,8 @@ li.selected:hover {
 }
 
 ul.zone-listing-new > li > a:hover {
-  color: #FFFFFF !important;
-  background-color: #A53159;
+  /* color: #FFFFFF !important;
+  background-color: #A53159; */
 }
 
 li.selected a{
@@ -5354,6 +5356,12 @@ color: #686868;
   left: 16px;
   top: 0px;
 }
+.field-username label.col-sm-3.control-label {
+  text-align: left !important;
+  max-width: 100%;
+  height: 16px;
+  left: 16px;
+}
 
 .form-group.field-username {
   display: inherit;
@@ -5600,6 +5608,8 @@ color: #686868;
   margin-top: -90px;
   width: 58%;
   display: block;
+  position: absolute;
+    z-index: 1 !important;
 }
 
 .policy-form .form-group.field-isAuditEnabled {
@@ -5620,7 +5630,7 @@ color: #686868;
 .form-group.field-tag {
   max-width: 175%;
   width: 152%;
-  margin-top: -18px;
+  /* margin-top: -18px; */
 }
 
 .table-permission thead{
@@ -6106,6 +6116,77 @@ button.btn.btn-sm.add-permissions:hover{
 button.btn.btn-sm.add-permissions:focus{
   box-shadow: none;
 }
+ul.zone-listing-new > li:hover > a {
+  color: #8C0000 !important;
+}
+.zone-listing-new > li > a:hover, .zone-listing-new > li > a{
+  font-size: 14px;
+}
+
+.VS-search-box-wrapper.VS-search-box {
+  height: 38px !important;
+}
+
+.wrap.non-collapsible {
+  padding: 16px;
+}
+
+.exec-services{
+  margin-left: 49%;
+    /* margin-top: 0px; */
+    padding-top: 0px;
+    top: 32px;
+}
+
+.text-right-update{
+  border: none;
+  text-align: right;
+}
+
+.entries-update{
+  float: left;
+  margin-top: 8px;
+  color: #686868;
+  font-family: Rakuten Sans;
+font-size: 13px;
+}
+
+.last-time-update{
+  margin-left: 95%;
+  /* margin-bottom: -8px; */
+  position: absolute;
+  /* right: 20px; */
+  /* bottom: 17px; */
+  width: 114px;
+  top: 13px;
+}
+
+.label-date-update{
+  position: absolute;
+  border: none;
+  color: #686868;
+  font-family: Rakuten Sans;
+font-size: 13px;
+}
+
+.refresh-btn-update{
+  margin-top: 5px;
+    left: 48%;
+    float: right;
+    /* right: 28px; */
+    position: relative;
+    border: none;
+}
+.refresh-btn-update:focus{
+  border: none;
+}
+
+.badge-update{
+  border: none;
+  color: #686868;
+  font-family: Rakuten Sans;
+font-size: 13px;
+}
 
 .form-group .col-md-12 .btn :hover {
   background-color: white;
@@ -6114,6 +6195,7 @@ button.btn.btn-sm.add-permissions:focus{
 
 .form-group.field-hadoop\.security\.authentication {
   display: inherit;
+  margin-top: -14px;
 }
 
 .field-hadoop\.security\.authentication label.col-sm-3.control-label {
@@ -6146,6 +6228,7 @@ button.btn.btn-sm.add-permissions:focus{
 }
 .form-group.field-hbase\.security\.authentication{
   display: inherit;
+  margin-top: -14px;
 }
 .field-hbase\.security\.authentication label.col-sm-3.control-label {
   text-align: left !important;
@@ -6178,6 +6261,7 @@ button.btn.btn-sm.add-permissions:focus{
 
 .form-group.field-hbase\.zookeeper\.quorum{
   display: inherit;
+  margin-top: -14px;
 }
 .field-hbase\.zookeeper\.quorum label.col-sm-3.control-label {
   text-align: left !important;
@@ -6192,14 +6276,10 @@ button.btn.btn-sm.add-permissions:focus{
 
 
 
-
 .form-group.field-zookeeper\.znode\.parent{
-  float: right;
   display: inherit;
-  margin-top: -90px;
-  width: 52%;
+  margin-top: -14px;
 }
-
 .field-zookeeper\.znode\.parent label.col-sm-3.control-label{
   text-align: left !important;
   max-width: 100%;
@@ -6207,7 +6287,8 @@ button.btn.btn-sm.add-permissions:focus{
   left: 16px;
 }
 .field-zookeeper\.znode\.parent .col-sm-4{
-  max-width: 100%;
+  width: 50.3%;
+  max-width: 50.3%;
 
 }
 
@@ -6221,3 +6302,56 @@ button.btn.btn-sm.add-permissions:focus{
 }
 
 
+
+
+.form-group.field-jdbc\.driverClassName{
+  display: inherit;
+  margin-top: -14px;
+}
+.field-jdbc\.driverClassName label.col-sm-3.control-label {
+  text-align: left !important;
+  max-width: 100%;
+  height: 16px;
+  left: 16px;
+}
+.field-jdbc\.driverClassName .col-sm-4 {
+  width: 50.3%;
+  max-width: 50.3%;
+}
+
+
+.form-group.form-group.field-jdbc\.url{
+  float: right;
+  display: inherit;
+  margin-top: -90px;
+  width: 52%;
+}
+
+.form-group.field-jdbc\.url label.col-sm-3.control-label{
+  text-align: left !important;
+  max-width: 100%;
+  height: 16px;
+  left: 16px;
+}
+.form-group.field-jdbc\.url .col-sm-4{
+  max-width: 100%;
+
+}
+
+.form-group.field-elasticsearch\.url{
+  float: right;
+  display: inherit;
+  margin-top: -90px;
+  width: 52%;
+}
+
+.form-group.field-elasticsearch\.urllabel.col-sm-3.control-label{
+  text-align: left !important;
+  max-width: 100%;
+  height: 16px;
+  left: 16px;
+}
+.form-group.field-elasticsearch\.url.col-sm-4{
+  max-width: 100%;
+
+}
